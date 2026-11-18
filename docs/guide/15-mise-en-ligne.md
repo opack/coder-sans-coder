@@ -56,7 +56,7 @@ Le mieux est d'automatiser la publication, pour qu'elle se fasse toujours de la 
 
 ```text
 Mets en place une publication automatique : quand j'envoie une version
-sur la branche main de GitHub, les tests sont lancés, et s'ils passent,
+sur GitHub, les tests sont lancés, et s'ils passent,
 l'application est mise en ligne. Explique-moi comment revenir à la
 version précédente en cas de problème.
 ```

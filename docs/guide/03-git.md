@@ -10,7 +10,7 @@ Quand tu travailles avec Claude, il modifie souvent plusieurs fichiers d'un coup
 
 Et surtout : **un filet de sécurité te permet d'oser.** Tu peux laisser Claude tenter une idée, sachant que si ça rate, tu reviens en arrière sans rien perdre.
 
-## Les quatre notions à comprendre
+## Les trois notions à comprendre
 
 ### Le dépôt (repository)
 
@@ -26,16 +26,6 @@ La règle : **un commit à chaque étape qui fonctionne.** Pas quand c'est à mo
 
 C'est la liste de tous les commits. Tu peux revenir à n'importe laquelle de ces photos.
 
-### La branche : un brouillon parallèle
-
-Une **branche** est une copie de travail de ton application, sur laquelle tu peux essayer des choses sans toucher à la version principale (souvent appelée `main`). Si l'essai est réussi, on le fusionne dans la version principale. S'il rate, on jette la branche.
-
-```text
-main      ●───●───●─────────────●   ← la version qui marche
-               \               /
-essai           ●───●───●───●      ← le brouillon (fusionné quand c'est bon)
-```
-
 ## Tu n'as pas besoin d'apprendre les commandes
 
 Claude connaît Git parfaitement. Tu peux tout lui demander en français :
@@ -47,8 +37,6 @@ Claude connaît Git parfaitement. Tu peux tout lui demander en français :
 | Voir l'historique | « Montre-moi les 10 derniers commits, en français. » |
 | Annuler les changements en cours | « Annule tout ce qui a été modifié depuis le dernier commit. » |
 | Revenir à une ancienne version | « Reviens à la version d'avant l'ajout de la facturation. » |
-| Essayer sans risque | « Crée une branche pour essayer cette idée. » |
-| Garder l'essai | « L'essai est concluant, fusionne la branche dans main. » |
 
 ::: tip Mets-le dans ton CLAUDE.md
 Ajoute une règle du genre : « Propose-moi un commit à chaque fois qu'une étape est terminée et que les tests passent. » Claude y pensera pour toi.
@@ -76,3 +64,26 @@ C'est pratique pour annuler la dernière action, mais **ça ne remplace pas Git*
 
 - `/rewind` pour le « oups » immédiat ;
 - Git pour les vraies étapes de ton projet.
+
+## Pour plus tard : les branches {#branches}
+
+::: info Facultatif
+Tu peux **complètement ignorer cette partie au début**. Travailler directement sur la version principale, avec un `/commit` à chaque étape qui marche, est déjà une excellente protection. Reviens ici quand Git te sera devenu familier.
+:::
+
+Une **branche** est un brouillon parallèle de ton application : tu peux y essayer une idée sans toucher à la version principale (souvent appelée `main`). Si l'essai est réussi, on le fusionne dans la version principale. S'il rate, on jette le brouillon.
+
+```text
+main      ●───●───●─────────────●   ← la version qui marche
+               \               /
+essai           ●───●───●───●      ← le brouillon (fusionné quand c'est bon)
+```
+
+C'est utile surtout pour les essais incertains : une grosse réorganisation, une idée dont tu n'es pas sûr. Comme pour le reste, tu le demandes à Claude en français :
+
+| Ce que tu veux | Ce que tu dis à Claude |
+| --- | --- |
+| Essayer sans risque | « Crée une branche pour essayer cette idée. » |
+| Garder l'essai | « L'essai est concluant, fusionne la branche dans la version principale. » |
+| Abandonner l'essai | « L'essai n'est pas concluant, reviens sur la version principale et supprime la branche. » |
+| Savoir où j'en suis | « Sur quelle branche suis-je, et y a-t-il des essais en cours ? » |

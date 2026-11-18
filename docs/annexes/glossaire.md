@@ -8,7 +8,7 @@
 
 **Base de données** : l'endroit où l'application range ses informations (clients, factures…) de façon durable.
 
-**Branche** : une copie de travail du projet dans Git, pour essayer des choses sans toucher à la version principale. → [Chapitre 3](/guide/03-git)
+**Branche** : une copie de travail du projet dans Git, pour essayer des choses sans toucher à la version principale. Facultatif au début. → [Chapitre 3](/guide/03-git#branches)
 
 **Bug** : un comportement de l'application différent de celui attendu.
 
