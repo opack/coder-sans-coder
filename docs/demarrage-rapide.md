@@ -54,19 +54,9 @@ Si une étape échoue, on ne force pas : on revient en arrière.
 | Modèle | Opus pour réfléchir (spec, architecture, bugs difficiles), Sonnet pour le travail courant | [Chapitre 2](/guide/02-installer-et-regler) |
 | Effort | `medium` par défaut, `high` pour les sujets délicats | [Chapitre 2](/guide/02-installer-et-regler) |
 | Permissions | Laisse Claude travailler, mais pas en roue libre sur ta production | [Chapitre 2](/guide/02-installer-et-regler) |
-| CLAUDE.md | Créé dès le premier jour avec `/init`, puis enrichi | [Chapitre 6](/guide/06-claude-md) |
-
-## Les cinq commandes à connaître
-
-| Commande | Ce qu'elle fait |
-| --- | --- |
-| `Shift+Tab` | Passe en mode plan (Claude réfléchit sans rien modifier) |
-| `/clear` | Vide la conversation pour repartir sur un nouveau sujet |
-| `Échap` | Arrête Claude immédiatement, s'il part dans la mauvaise direction |
-| `Échap Échap` ou `/rewind` | Revient en arrière dans la conversation et/ou dans le code |
-| `/model` et `/effort` | Change de modèle et de niveau de réflexion |
-
-→ La liste complète est dans l'[aide-mémoire](/annexes/aide-memoire).
+| Posture | Claude franc, qui pose des questions et prouve ce qu'il affirme, réglé une fois pour toutes dans les paramètres | [Chapitre 2](/guide/02-installer-et-regler#regler-la-posture-de-claude) |
+| CLAUDE.md | Créé dès le premier jour, puis enrichi | [Chapitre 6](/guide/06-claude-md) |
+| Automatismes | Mise en forme du code et tests lancés automatiquement | [Chapitre 14](/guide/14-skills-et-hooks) |
 
 ## Si tu refais une application à partir d'un prototype
 

@@ -17,12 +17,15 @@ Dans Claude Code, tape `/init`. Claude analyse ton projet et écrit une premièr
 ## Ce qu'on y met
 
 - **Le contexte** : ce qu'est l'application, en deux lignes, et un lien vers le cahier des charges.
-- **La posture attendue** : comment Claude doit se comporter avec toi ([chapitre 2](/guide/02-installer-et-regler#regler-la-posture-de-claude)).
 - **Les commandes** : comment lancer l'application, comment lancer les tests.
 - **Les règles du projet** : l'architecture à respecter, la façon de travailler.
 - **Les pièges connus** : les erreurs que Claude a déjà faites et qu'il ne doit pas refaire.
 
 Un modèle complet est disponible dans les [modèles à copier](/annexes/modeles#claude-md).
+
+::: tip Et la posture ?
+La façon dont Claude doit se comporter avec toi (franchise, questions, preuves) vaut pour tous tes projets : elle se règle plutôt dans les paramètres de l'application ([chapitre 2](/guide/02-installer-et-regler#regler-la-posture-de-claude)). Le CLAUDE.md, lui, contient ce qui est propre à **ce** projet.
+:::
 
 ## Ce qu'on n'y met pas
 

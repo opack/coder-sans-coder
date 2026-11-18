@@ -9,7 +9,7 @@ next: false
 
 <div class="print-cover">
 
-# Maître d'ouvrage
+# Coder sans coder
 
 **Construire ton application avec Claude, sans être développeur**
 

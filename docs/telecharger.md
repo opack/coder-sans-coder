@@ -8,7 +8,7 @@ import { withBase } from 'vitepress'
 
 Le guide complet, en un seul document, pour le lire hors ligne ou l'imprimer.
 
-<p><a class="download-btn" :href="withBase('/guide-maitre-ouvrage.pdf')" download>⬇ Télécharger le PDF</a></p>
+<p><a class="download-btn" :href="withBase('/coder-sans-coder.pdf')" download>⬇ Télécharger le PDF</a></p>
 
 ## En version texte pour Claude
 

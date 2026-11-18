@@ -12,6 +12,11 @@
   --vp-c-brand-3: #ea580c;
 }
 
+/* ---------- Hiérarchie des titres, plus marquée que le thème par défaut ---------- */
+.vp-doc h1 { font-size: 34px; letter-spacing: -0.02em; }
+.vp-doc h2 { font-size: 26px; }
+.vp-doc h3 { font-size: 19px; color: var(--vp-c-brand-1); }
+
 /* Encadré « En une phrase » en tête de chapitre */
 .vp-doc .custom-block.info .custom-block-title { text-transform: none; }
 
@@ -27,8 +32,25 @@
     padding: 0 !important; margin: 0 !important; max-width: none !important;
   }
   :root { --vp-layout-max-width: none; }
-  body { font-size: 11pt; }
-  .vp-doc h1 { page-break-before: always; margin-top: 0; }
+  body { font-size: 10.5pt; }
+  .vp-doc h1 {
+    page-break-before: always;
+    margin-top: 0;
+    padding-bottom: 6mm;
+    border-bottom: 2px solid var(--vp-c-brand-3);
+    font-size: 24pt;
+    line-height: 1.2;
+    color: var(--vp-c-brand-1);
+  }
+  .vp-doc h2 {
+    font-size: 16pt;
+    margin-top: 9mm;
+    padding-top: 0;
+    border-top: 0;
+    border-left: 4px solid var(--vp-c-brand-3);
+    padding-left: 3mm;
+  }
+  .vp-doc h3 { font-size: 12.5pt; margin-top: 6mm; color: var(--vp-c-brand-1); }
   .vp-doc .print-cover h1 { page-break-before: avoid; }
   .vp-doc h2, .vp-doc h3 { page-break-after: avoid; }
   .vp-doc pre, .vp-doc table, .vp-doc .custom-block { page-break-inside: avoid; }
@@ -36,6 +58,6 @@
   .vp-doc a { color: inherit; text-decoration: underline; }
   .vp-doc ol { padding-left: 2.2em; }
   .vp-doc .print-cover { padding-top: 70mm; text-align: center; page-break-after: always; }
-  .vp-doc .print-cover h1 { font-size: 34pt; border: 0; color: var(--vp-c-brand-1); }
+  .vp-doc .print-cover h1 { font-size: 38pt; border: 0; color: var(--vp-c-brand-1); }
   .vp-doc .print-cover p { font-size: 14pt; }
 }

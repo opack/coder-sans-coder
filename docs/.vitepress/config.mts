@@ -3,10 +3,9 @@ import llmstxt from 'vitepress-plugin-llms'
 
 // Sur GitHub Pages, le site est servi sous /<nom-du-depot>/.
 // Le workflow de déploiement fournit BASE ; en local on garde la valeur par défaut.
-const base = process.env.BASE || '/maitre-ouvrage/'
+const base = process.env.BASE || '/coder-sans-coder/'
 
-export const SITE_TITLE = "Maître d'ouvrage"
-export const PDF_NAME = 'guide-maitre-ouvrage.pdf'
+export const SITE_TITLE = "Coder sans coder"
 
 export default defineConfig({
   lang: 'fr-FR',

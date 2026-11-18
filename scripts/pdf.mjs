@@ -5,9 +5,9 @@ import { spawn } from 'node:child_process'
 import { setTimeout as wait } from 'node:timers/promises'
 import { chromium } from 'playwright-core'
 
-const base = process.env.BASE || '/maitre-ouvrage/'
+const base = process.env.BASE || '/coder-sans-coder/'
 const port = 4173
-const out = 'docs/.vitepress/dist/guide-maitre-ouvrage.pdf'
+const out = 'docs/.vitepress/dist/coder-sans-coder.pdf'
 const url = `http://localhost:${port}${base}guide-complet`
 
 // Un ancien serveur encore actif servirait des fichiers périmés : on refuse de continuer.
@@ -45,7 +45,7 @@ try {
     headerTemplate: '<span></span>',
     footerTemplate:
       '<div style="font-size:8px;width:100%;text-align:center;color:#888">' +
-      "Maître d'ouvrage — <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></div>",
+      "Coder sans coder — <span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></div>",
   })
   await browser.close()
   console.log(`PDF généré : ${out}`)

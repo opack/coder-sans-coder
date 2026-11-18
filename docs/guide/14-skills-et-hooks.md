@@ -57,21 +57,38 @@ Tu n'as pas à les écrire : demande à Claude, ou à un développeur, de les in
 | **Mise en forme automatique** | Après chaque modification, le code est remis en forme selon les règles du projet | Le code reste propre et homogène, sans y penser |
 | **Fichiers protégés** | Interdit à Claude de modifier certains fichiers (`.env`, configuration de production…) | Protège tes secrets et ta production contre une fausse manœuvre |
 
-### Les installer
+### Les installer : la demande à copier {#demande-hooks}
+
+Copie cette demande telle quelle dans Claude, depuis le dossier de ton projet. Les deux premiers hooks sont les plus importants ; les deux suivants sont facultatifs, supprime-les si tu n'en veux pas.
 
 ```text
-Installe pour ce projet les hooks suivants :
-1. une notification quand tu attends ma réponse
-2. à la fin de chaque tâche, lancer les tests ; s'ils échouent,
-   tu ne dois pas t'arrêter
-3. mise en forme automatique du code après chaque modification
-4. interdiction de modifier le fichier .env
-Explique-moi simplement ce que fait chacun, et comment le désactiver
-si besoin.
+Je veux que tu installes des hooks Claude Code pour ce projet, dans
+.claude/settings.json (pour qu'ils soient sauvegardés avec le projet).
+
+1. Mise en forme automatique : après chaque création ou modification
+   de fichier, le fichier est remis en forme avec Prettier (ou l'outil
+   de mise en forme le plus adapté à notre stack). Installe et configure
+   l'outil s'il n'est pas déjà dans le projet.
+
+2. Tests obligatoires : quand tu considères ta tâche terminée, toute la
+   suite de tests est lancée automatiquement. Si un test échoue, tu ne
+   peux pas t'arrêter : tu dois corriger jusqu'à ce que tout passe.
+
+3. (Facultatif) Notification : préviens-moi quand tu attends ma réponse
+   ou ma validation.
+
+4. (Facultatif) Protection : interdiction de lire ou modifier le
+   fichier .env et les fichiers de configuration de production.
+
+Ensuite :
+- vérifie que chaque hook fonctionne réellement (déclenche-les
+  une fois et montre-moi le résultat) ;
+- explique-moi en quelques phrases simples ce que fait chacun ;
+- dis-moi comment en désactiver un temporairement si besoin ;
+- ajoute une ligne dans CLAUDE.md qui mentionne ces hooks ;
+- fais un commit.
 ```
 
-Tape `/hooks` pour voir les hooks installés.
-
-::: tip Commence par deux
-Si tu ne devais en garder que deux : la **notification** (confort immédiat) et les **tests obligatoires à la fin** (qualité garantie). Les autres viendront quand tu en sentiras le besoin.
+::: tip Si les tests sont longs
+Si la suite de tests prend plusieurs minutes, les lancer à chaque fin de tâche peut ralentir le travail. Dans ce cas, demande à Claude de ne lancer que les tests rapides automatiquement, et les tests complets avant chaque commit.
 :::

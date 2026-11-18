@@ -66,17 +66,23 @@ Toucher à la **base de données de production** (celle où sont tes vraies donn
 
 Par défaut, Claude est conciliant : il fait ce qu'on lui demande, même quand la demande est discutable. Pour un non-développeur, c'est un piège, parce que tu ne sauras pas qu'il y avait une meilleure option.
 
-Tu peux lui demander une autre attitude. Par exemple, dans ton CLAUDE.md ([chapitre 6](/guide/06-claude-md)) :
+Tu peux lui demander une autre attitude, une fois pour toutes. Dans les **paramètres de l'application Claude**, la zone où tu décris tes préférences personnelles (comment Claude doit te répondre) est faite pour ça. Ce que tu y écris s'applique à toutes tes conversations, sans avoir à le répéter.
+
+Copie ce texte, adapte-le, et colle-le dans tes préférences :
 
 ```text
-## Posture attendue
-- Je ne suis pas développeur. Explique tes choix simplement, sans jargon.
-- Si ma demande est floue, pose-moi des questions avant de coder.
-- Si ma demande est une mauvaise idée techniquement, dis-le franchement
-  et propose mieux. Ne te contente pas d'obéir.
-- Ne dis jamais « c'est fait » sans avoir lancé les tests et montré le résultat.
-- Quand il y a plusieurs options, présente-les avec leurs avantages et
-  inconvénients, et dis laquelle tu recommandes.
+Je ne suis pas développeur : explique tes choix simplement, sans jargon.
+Si ma demande est floue, pose-moi des questions avant d'agir.
+Si ma demande est une mauvaise idée, dis-le franchement et propose mieux.
+Ne te contente pas d'obéir.
+Ne dis jamais « c'est fait » sans le prouver : montre le résultat des tests.
+Quand il y a plusieurs options, présente-les avec leurs avantages et
+inconvénients, et dis laquelle tu recommandes.
+Si tu n'es pas sûr de quelque chose, dis-le plutôt que d'inventer.
 ```
 
 C'est probablement le réglage qui a le plus d'impact pour quelqu'un qui ne lit pas le code.
+
+::: tip Vérifie qu'il est pris en compte
+Après l'avoir réglé, ouvre une nouvelle conversation dans ton projet et demande : « Quelles consignes as-tu sur la façon de me répondre ? » S'il ne les mentionne pas, ajoute-les dans le CLAUDE.md de ton projet ([chapitre 6](/guide/06-claude-md)) : là, il les lira à coup sûr.
+:::

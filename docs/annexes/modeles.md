@@ -18,14 +18,8 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 - Avancement : docs/AVANCEMENT.md
 - Décisions : docs/DECISIONS.md
 
-## Posture attendue
-- Je ne suis pas développeur. Explique tes choix simplement, sans jargon.
-- Si ma demande est floue, pose-moi des questions avant de coder.
-- Si ma demande est une mauvaise idée, dis-le franchement et propose mieux.
-- Quand il y a plusieurs options, présente-les et dis laquelle tu recommandes.
-- Si une règle métier manque dans docs/SPEC.md, demande-moi au lieu d'inventer.
-
 ## Façon de travailler
+- Si une règle métier manque dans docs/SPEC.md, demande-moi au lieu d'inventer.
 - Une petite étape à la fois. Si une demande est trop grosse, propose un découpage.
 - Écris les tests en même temps que le code, et lance-les avant de dire que c'est fini.
 - Ne dis jamais « c'est fait » sans montrer le résultat des tests.
@@ -134,6 +128,10 @@ Résultat obtenu : …
 Écris d'abord un test qui reproduit ce bug, puis corrige la cause
 (pas seulement le symptôme). Montre-moi que le test passe.
 ```
+
+## Installer les automatismes (hooks)
+
+La demande complète, avec la mise en forme automatique et les tests obligatoires, est dans le [chapitre 14](/guide/14-skills-et-hooks#demande-hooks).
 
 ## Faire relire
 

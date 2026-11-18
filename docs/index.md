@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Maître d'ouvrage"
+  name: "Coder sans coder"
   text: Construire ton application avec Claude, sans être développeur
   tagline: "Claude construit. Toi, tu décides, tu expliques et tu vérifies. Ce guide t'apprend à tenir ce rôle."
   actions:

@@ -1,4 +1,4 @@
-# Maître d'ouvrage
+# Coder sans coder
 
 Guide pour construire son application avec Claude quand on n'est pas développeur.
 Site statique [VitePress](https://vitepress.dev), déployé sur GitHub Pages, avec export PDF et version texte pour les IA (`llms.txt`, `llms-full.txt`).
@@ -26,4 +26,4 @@ npm run preview    # prévisualiser le build
 1. Dans GitHub : **Settings → Pages → Source : GitHub Actions**.
 2. Pousser sur `main`. Le workflow `.github/workflows/deploy.yml` construit le site, génère le PDF et publie.
 
-Le chemin de base du site est déduit du nom du dépôt (variable `BASE`). En local, il vaut `/maitre-ouvrage/`.
+Le chemin de base du site est déduit du nom du dépôt (variable `BASE`). En local, il vaut `/coder-sans-coder/`.
