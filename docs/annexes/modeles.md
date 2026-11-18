@@ -33,6 +33,7 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 - Ne modifie, ne désactive, ne supprime jamais un test existant sans mon accord.
 - Ne modifie que ce qui concerne la tâche en cours.
 - Quand une étape est terminée et que les tests passent, rappelle-moi de lancer /commit.
+- Ne crée jamais de branche Git sans me le proposer et m'expliquer pourquoi.
 - En fin de tâche, mets à jour docs/AVANCEMENT.md.
 
 ## Commandes

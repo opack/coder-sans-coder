@@ -69,6 +69,8 @@ C'est pratique pour annuler la dernière action, mais **ça ne remplace pas Git*
 
 ::: info Facultatif
 Tu peux **complètement ignorer cette partie au début**. Travailler directement sur la version principale, avec un `/commit` à chaque étape qui marche, est déjà une excellente protection. Reviens ici quand Git te sera devenu familier.
+
+Pour que Claude ne crée pas de branche de lui-même, le [modèle de CLAUDE.md](/annexes/modeles#claude-md) contient la règle : « Ne crée jamais de branche Git sans me le proposer et m'expliquer pourquoi. »
 :::
 
 Une **branche** est un brouillon parallèle de ton application : tu peux y essayer une idée sans toucher à la version principale (souvent appelée `main`). Si l'essai est réussi, on le fusionne dans la version principale. S'il rate, on jette le brouillon.
