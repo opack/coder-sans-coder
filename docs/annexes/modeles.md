@@ -32,7 +32,7 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 - Ne dis jamais « c'est fait » sans montrer le résultat des tests.
 - Ne modifie, ne désactive, ne supprime jamais un test existant sans mon accord.
 - Ne modifie que ce qui concerne la tâche en cours.
-- Quand une étape est terminée et que les tests passent, propose-moi un commit.
+- Quand une étape est terminée et que les tests passent, rappelle-moi de lancer /commit.
 - En fin de tâche, mets à jour docs/AVANCEMENT.md.
 
 ## Commandes
@@ -151,6 +151,10 @@ Résultat obtenu : …
 (pas seulement le symptôme). Montre-moi que le test passe.
 ```
 
+## Installer la skill `/commit`
+
+La demande complète est dans le [chapitre 14](/guide/14-skills-et-hooks#skill-commit).
+
 ## Installer les automatismes (hooks)
 
 La demande complète, avec la mise en forme automatique et les tests obligatoires, est dans le [chapitre 14](/guide/14-skills-et-hooks#demande-hooks).
@@ -175,7 +179,7 @@ Avant qu'on termine :
 - mets à jour docs/AVANCEMENT.md
 - si on a pris une décision importante, ajoute-la dans docs/DECISIONS.md
   avec sa raison
-- propose-moi un commit
+- rappelle-moi de lancer /commit
 ```
 
 ## Faire un état des lieux
@@ -211,5 +215,5 @@ Fonctionnalité demandée : $ARGUMENTS
 6. Utilise un sous-agent pour relire le travail par rapport à la spec et à l'architecture.
    Corrige les vrais problèmes.
 7. Montre-moi le résultat des tests et résume ce qui a été fait, sans jargon.
-8. Mets à jour docs/AVANCEMENT.md et propose-moi un commit.
+8. Mets à jour docs/AVANCEMENT.md et rappelle-moi de lancer /commit.
 ```

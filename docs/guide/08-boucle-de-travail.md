@@ -50,7 +50,7 @@ Trois niveaux de vérification, du plus rapide au plus sûr :
 
 ## ⑤ Sauvegarder
 
-Quand tout est vérifié : « Fais un commit. » ([chapitre 3](/guide/03-git)). Pas avant.
+Quand tout est vérifié : `/commit` ([chapitre 14](/guide/14-skills-et-hooks#skill-commit)), ou simplement « Fais un commit. » ([chapitre 3](/guide/03-git)). Pas avant.
 
 Profites-en pour mettre à jour l'avancement : « Mets à jour docs/AVANCEMENT.md. »
 

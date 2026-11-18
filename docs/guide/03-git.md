@@ -54,6 +54,14 @@ Claude connaît Git parfaitement. Tu peux tout lui demander en français :
 Ajoute une règle du genre : « Propose-moi un commit à chaque fois qu'une étape est terminée et que les tests passent. » Claude y pensera pour toi.
 :::
 
+## Encore plus simple : la commande `/commit`
+
+Sauvegarder proprement demande plusieurs vérifications : les tests passent-ils ? Ne sauvegarde-t-on que ce qui concerne l'étape en cours ? Aucun mot de passe ne part-il dans l'historique ? Le message est-il clair ?
+
+Plutôt que de le redemander à chaque fois, tu peux apprendre tout ça à Claude une bonne fois, sous la forme d'une **skill** : une fiche méthode qu'il suit quand tu tapes `/commit`. Elle vérifie tout, écrit le message en français et fait la sauvegarde. Tu n'as plus qu'à taper une commande à la fin de chaque étape.
+
+La demande pour l'installer est prête à copier dans le [chapitre 14](/guide/14-skills-et-hooks#skill-commit). Tu peux l'installer dès le premier jour, même si les skills ne sont expliquées en détail que plus tard.
+
 ## Sauvegarder en ligne : GitHub
 
 Git garde l'historique sur ton ordinateur. Si ton ordinateur meurt, tout disparaît. **GitHub** (ou un équivalent) garde une copie en ligne de ton dépôt. C'est aussi ce qui permettra à un développeur de t'aider un jour, ou de reprendre le projet.

@@ -25,6 +25,7 @@
 | `/permissions` | Règle ce que Claude peut faire sans demander |
 | `/hooks` | Montre les automatismes installés |
 | `/code-review` | Fait relire les changements par un Claude séparé |
+| `/commit` | Sauvegarde le travail en cours, message en français (skill à installer, [chapitre 14](/guide/14-skills-et-hooks#skill-commit)) |
 
 ::: tip Les commandes marchent aussi dans l'application
 Toutes les commandes qui commencent par `/` peuvent être tapées directement dans la zone de saisie de l'application.
@@ -45,7 +46,7 @@ Toutes les commandes qui commencent par `/` peuvent être tapées directement da
 - [ ] J'ai essayé moi-même, y compris les cas bizarres
 - [ ] Un second Claude a relu (si l'étape est importante)
 - [ ] `docs/AVANCEMENT.md` est à jour
-- [ ] Commit fait
+- [ ] `/commit` fait
 - [ ] Nouvelle session avant la suite
 
 ## Les signaux d'alerte
