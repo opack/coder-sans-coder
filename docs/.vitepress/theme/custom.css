@@ -1,0 +1,41 @@
+/* Couleur principale : un orange « chantier » chaud, lisible en clair et en sombre */
+:root {
+  --vp-c-brand-1: #c2410c;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #f97316;
+  --vp-c-brand-soft: rgba(234, 88, 12, 0.14);
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+}
+.dark {
+  --vp-c-brand-1: #fb923c;
+  --vp-c-brand-2: #f97316;
+  --vp-c-brand-3: #ea580c;
+}
+
+/* Encadré « En une phrase » en tête de chapitre */
+.vp-doc .custom-block.info .custom-block-title { text-transform: none; }
+
+/* Bloc à copier (prompts) : légèrement distinct du code */
+.vp-doc div[class*='language-text'] { border-left: 3px solid var(--vp-c-brand-3); }
+
+/* ---------- Impression / PDF ---------- */
+@media print {
+  .VPNav, .VPLocalNav, .VPSidebar, .VPDocAside, .VPDocFooter, .VPFooter,
+  .aside, .edit-info, .prev-next, .copy, .lang, .header-anchor { display: none !important; }
+
+  .VPContent, .VPDoc, .VPDoc .container, .VPDoc .content, .VPDoc .content-container {
+    padding: 0 !important; margin: 0 !important; max-width: none !important;
+  }
+  :root { --vp-layout-max-width: none; }
+  body { font-size: 11pt; }
+  .vp-doc h1 { page-break-before: always; margin-top: 0; }
+  .vp-doc .print-cover h1 { page-break-before: avoid; }
+  .vp-doc h2, .vp-doc h3 { page-break-after: avoid; }
+  .vp-doc pre, .vp-doc table, .vp-doc .custom-block { page-break-inside: avoid; }
+  .vp-doc div[class*='language-'] pre { white-space: pre-wrap; word-break: break-word; }
+  .vp-doc a { color: inherit; text-decoration: underline; }
+  .vp-doc ol { padding-left: 2.2em; }
+  .vp-doc .print-cover { padding-top: 70mm; text-align: center; page-break-after: always; }
+  .vp-doc .print-cover h1 { font-size: 34pt; border: 0; color: var(--vp-c-brand-1); }
+  .vp-doc .print-cover p { font-size: 14pt; }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "maitre-ouvrage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "pdf": "node scripts/pdf.mjs",
+    "build:all": "npm run build && npm run pdf"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright-core": "^1.65.1",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-llms": "^1.15.0"
+  },
+  "type": "module"
+}

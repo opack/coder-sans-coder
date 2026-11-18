@@ -1,0 +1,82 @@
+# 2. Installer et régler Claude
+
+::: info En une phrase
+Le bon modèle, le bon niveau de réflexion et des permissions raisonnables : trois réglages qui changent beaucoup la qualité du résultat.
+:::
+
+## Où utiliser Claude Code
+
+Claude Code est l'outil de Claude spécialisé dans la construction de logiciels. Il peut lire et modifier les fichiers de ton projet, lancer des commandes, faire tourner les tests. Tu peux l'utiliser :
+
+- dans un **terminal** (la fenêtre texte noire), qui est l'outil le plus complet ;
+- dans l'**application de bureau Claude** ou dans **VS Code**, si tu préfères une interface plus visuelle.
+
+Le fonctionnement est le même partout. Ce guide utilise les commandes du terminal, mais elles existent aussi ailleurs.
+
+::: tip Ouvre toujours Claude dans le dossier de ton projet
+Claude travaille sur le dossier dans lequel tu l'as lancé. Si tu le lances au mauvais endroit, il ne trouvera pas ton application, ou pire, il ira modifier autre chose.
+:::
+
+## Choisir le modèle
+
+Claude existe en plusieurs « tailles ». Les plus gros réfléchissent mieux mais coûtent plus cher et sont plus lents.
+
+| Modèle | Pour quoi faire | Image |
+| --- | --- | --- |
+| **Opus** | Réfléchir : cahier des charges, architecture, bug difficile, relecture | L'architecte |
+| **Sonnet** | Construire au quotidien une fonctionnalité bien décrite | Le chef d'équipe |
+| **Haiku** | Petites tâches simples et rapides | L'apprenti |
+
+Pour changer de modèle : tape `/model`, et choisis dans la liste.
+
+::: tip Le combo malin
+Le réglage `opusplan` utilise Opus pour faire le plan et Sonnet pour l'exécuter. C'est un bon équilibre entre qualité et coût. Tape `/model opusplan`.
+:::
+
+## Choisir le niveau d'effort
+
+En plus du modèle, tu choisis **combien Claude réfléchit** avant d'agir. C'est le niveau d'effort : `low`, `medium`, `high`, `xhigh`, `max`.
+
+- `medium` : le réglage par défaut, très bien pour le travail courant.
+- `high` : pour un bug tenace, une fonctionnalité délicate, une décision importante.
+- `xhigh` ou `max` : pour les problèmes vraiment difficiles. Plus lent, plus cher, et parfois Claude réfléchit trop.
+- `low` : pour les questions simples et les petites retouches.
+
+Pour changer : tape `/effort` (ou `/effort high` directement).
+
+::: warning Plus n'est pas toujours mieux
+Mettre `max` partout ne rend pas Claude meilleur : il devient lent, coûteux, et il complique parfois des choses simples. Monte le niveau quand la tâche le mérite, pas par défaut.
+:::
+
+## Régler les permissions
+
+Claude te demande l'autorisation avant certaines actions : modifier un fichier, lancer une commande. Tu as plusieurs modes, que tu fais défiler avec `Shift+Tab` :
+
+- **Mode manuel** : Claude demande avant presque tout. Sûr, mais fatigant. Au bout de la dixième validation, on clique sans lire, ce qui revient à ne rien contrôler.
+- **Mode auto** : un second modèle surveille les actions de Claude et ne bloque que celles qui semblent risquées. C'est un bon réglage par défaut pour travailler.
+- **Mode plan** : Claude lit et réfléchit, mais ne modifie rien. Idéal pour préparer ([chapitre 8](/guide/08-boucle-de-travail)).
+
+La commande `/permissions` te permet d'autoriser une fois pour toutes les actions sans danger (lancer les tests, par exemple) et d'interdire les actions dangereuses.
+
+::: danger Ce qu'on n'autorise jamais en roue libre
+Toucher à la **base de données de production** (celle où sont tes vraies données clients), **supprimer** des fichiers en masse, **publier** l'application en ligne. Pour ça, Claude doit te demander, et tu dois lire avant de valider.
+:::
+
+## Régler la posture de Claude
+
+Par défaut, Claude est conciliant : il fait ce qu'on lui demande, même quand la demande est discutable. Pour un non-développeur, c'est un piège, parce que tu ne sauras pas qu'il y avait une meilleure option.
+
+Tu peux lui demander une autre attitude. Par exemple, dans ton CLAUDE.md ([chapitre 6](/guide/06-claude-md)) :
+
+```text
+## Posture attendue
+- Je ne suis pas développeur. Explique tes choix simplement, sans jargon.
+- Si ma demande est floue, pose-moi des questions avant de coder.
+- Si ma demande est une mauvaise idée techniquement, dis-le franchement
+  et propose mieux. Ne te contente pas d'obéir.
+- Ne dis jamais « c'est fait » sans avoir lancé les tests et montré le résultat.
+- Quand il y a plusieurs options, présente-les avec leurs avantages et
+  inconvénients, et dis laquelle tu recommandes.
+```
+
+C'est probablement le réglage qui a le plus d'impact pour quelqu'un qui ne lit pas le code.
