@@ -32,7 +32,7 @@ Tu n'as pas à connaître les technologies. Tu dois en revanche savoir ce qui co
 ## Le faire choisir par Claude, correctement
 
 ```text
-Lis docs/SPEC.md. Je dois choisir la stack technique et l'architecture
+Lis le cahier des charges (docs/spec/, en commençant par index.md). Je dois choisir la stack technique et l'architecture
 de cette application. Je ne suis pas développeur.
 Contraintes : [nombre d'utilisateurs, ordinateur/mobile, budget
 d'hébergement, données sensibles ou non…]

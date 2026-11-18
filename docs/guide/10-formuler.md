@@ -15,7 +15,7 @@ Plus ta demande est précise sur le besoin, moins tu auras de corrections. Décr
 
 | Demande floue | Demande précise |
 | --- | --- |
-| « Ajoute les remises » | « Sur un devis, je veux pouvoir appliquer une remise en % ou en euros, sur une ligne ou sur le total. Règles dans docs/SPEC.md, section Remises. Une remise ne peut jamais rendre le total négatif. C'est réussi si les scénarios de la section Remises passent tous. » |
+| « Ajoute les remises » | « Sur un devis, je veux pouvoir appliquer une remise en % ou en euros, sur une ligne ou sur le total. Règles dans docs/spec/devis.md, partie Remises. Une remise ne peut jamais rendre le total négatif. C'est réussi si les scénarios de la section Remises passent tous. » |
 | « Le calcul est faux » | « Sur le devis n°12, total attendu 1 200 € HT, affiché 1 080 €. Il semble que la remise soit appliquée deux fois. Écris d'abord un test qui reproduit le problème, puis corrige la cause. » |
 | « Rends l'écran plus clair » | « Sur la liste des clients, je veux voir en premier les clients qui ont une facture impayée, avec le montant dû en rouge. » |
 
@@ -42,7 +42,7 @@ Tu seras surpris du nombre de cas que tu n'avais pas envisagés.
 
 - **Une capture d'écran** vaut mieux qu'une description. Tu peux la coller directement dans Claude.
 - **Un exemple chiffré** vaut mieux qu'une règle abstraite : « Pour 3 articles à 100 € avec 10 % de remise, le total doit être 270 €. »
-- **Un fichier** : tape `@` puis le nom du fichier pour que Claude le lise (par exemple `@docs/SPEC.md`).
+- **Un fichier** : tape `@` puis le nom du fichier pour que Claude le lise (par exemple `@docs/spec/devis.md`).
 
 ## Signaler un bug
 

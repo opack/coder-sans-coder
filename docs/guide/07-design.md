@@ -11,7 +11,7 @@ Modifier une maquette prend quelques secondes. Modifier un écran déjà codé, 
 Claude peut produire des maquettes visuelles de tes écrans. Avec les outils de design de Claude, tu obtiens des écrans que tu peux regarder, commenter et faire modifier, sans une ligne de code de ton application.
 
 ```text
-Lis docs/SPEC.md. Propose-moi des maquettes pour l'écran
+Lis docs/spec/index.md et docs/spec/[domaine].md. Propose-moi des maquettes pour l'écran
 [nom de l'écran]. Utilisateurs : [qui]. Ils l'utilisent pour [quoi],
 surtout sur [ordinateur / téléphone].
 Propose 2 ou 3 variantes différentes.

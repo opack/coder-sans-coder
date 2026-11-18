@@ -35,7 +35,7 @@ Fais un état des lieux honnête du projet, sans complaisance :
 - ce qui fonctionne bien
 - ce qui est fragile ou mal organisé
 - ce qui n'est pas testé
-- les écarts avec docs/SPEC.md et docs/ARCHITECTURE.md
+- les écarts avec le cahier des charges (docs/spec/) et docs/ARCHITECTURE.md
 - les 3 actions prioritaires pour remettre le projet sur de bons rails
 Explique simplement, je ne suis pas développeur.
 ```

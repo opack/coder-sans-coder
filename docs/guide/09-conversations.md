@@ -48,7 +48,7 @@ Si chaque conversation repart de zéro, il faut que **ce qui compte soit écrit 
 | Fichier | Rôle |
 | --- | --- |
 | `CLAUDE.md` | Les règles permanentes ([chapitre 6](/guide/06-claude-md)) |
-| `docs/SPEC.md` | Ce que l'application doit faire ([chapitre 4](/guide/04-cahier-des-charges)) |
+| `docs/spec/` | Ce que l'application doit faire, un fichier par domaine ([chapitre 4](/guide/04-cahier-des-charges)) |
 | `docs/ARCHITECTURE.md` | Comment le code est organisé ([chapitre 5](/guide/05-stack-et-architecture)) |
 | `docs/AVANCEMENT.md` | Ce qui est fait, ce qui est en cours, ce qui reste |
 | `docs/DECISIONS.md` | Les décisions importantes et **pourquoi** on les a prises |

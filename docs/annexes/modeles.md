@@ -12,14 +12,16 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 [Deux lignes : ce que fait l'application, pour qui.]
 
 ## Documents de référence
-- Cahier des charges : docs/SPEC.md (la référence pour toute règle métier)
+- Cahier des charges : docs/spec/ (index.md pour la vue d'ensemble,
+  puis un fichier par domaine). La référence pour toute règle métier.
+  Ne lis que les domaines utiles à la tâche en cours.
 - Architecture : docs/ARCHITECTURE.md (à respecter pour tout nouveau code)
 - Design : docs/DESIGN.md (toujours réutiliser ces composants)
 - Avancement : docs/AVANCEMENT.md
 - Décisions : docs/DECISIONS.md
 
 ## Façon de travailler
-- Si une règle métier manque dans docs/SPEC.md, demande-moi au lieu d'inventer.
+- Si une règle métier manque dans docs/spec/, demande-moi au lieu d'inventer.
 - Une petite étape à la fois. Si une demande est trop grosse, propose un découpage.
 - Écris les tests en même temps que le code, et lance-les avant de dire que c'est fini.
 - Ne dis jamais « c'est fait » sans montrer le résultat des tests.
@@ -47,19 +49,34 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 ```text
 Je veux construire [description courte de l'application].
 Interviewe-moi en détail, une question à la fois.
-Pose-moi des questions sur les règles de mon métier, les cas particuliers,
-les utilisateurs et ce qui est hors sujet. Ne pose pas de questions
+Commence par la vue d'ensemble : le but, les utilisateurs, et les grands
+domaines de mon activité. Propose-moi un découpage en domaines et
+attends que je le valide.
+Ensuite, interviewe-moi domaine par domaine : règles de mon métier,
+cas particuliers, ce qui est hors sujet. Ne pose pas de questions
 techniques : je ne suis pas développeur.
-Quand on a tout couvert, rédige le cahier des charges dans docs/SPEC.md,
+Rédige le cahier des charges dans docs/spec/ : un fichier index.md pour
+la vue d'ensemble, puis un fichier par domaine, au fur et à mesure,
 en français simple.
 ```
 
-### À partir d'un prototype
+### À partir d'un prototype : 1. le découpage
 
 ```text
-Analyse cette application et rédige un cahier des charges complet
-dans docs/SPEC.md, en français, sans jargon technique :
-- la liste des écrans et ce qu'on peut y faire
+Analyse cette application. Sans rien rédiger de détaillé pour l'instant,
+propose-moi :
+- une vue d'ensemble : à quoi elle sert, qui l'utilise
+- un découpage en domaines métier (3 à 8), avec pour chacun les écrans
+  et les objets qu'il couvre
+Attends que je valide le découpage, puis écris docs/spec/index.md.
+```
+
+### À partir d'un prototype : 2. un domaine (une session par domaine)
+
+```text
+Lis docs/spec/index.md. Analyse dans l'application tout ce qui concerne
+le domaine [nom] et rédige docs/spec/[nom].md, en français, sans jargon :
+- les écrans et ce qu'on peut y faire
 - les objets métier et leurs informations
 - toutes les règles de gestion et les calculs, avec des exemples chiffrés
 - les cas particuliers gérés par le code
@@ -70,7 +87,7 @@ Ne décris pas comment c'est codé, seulement ce que ça fait.
 ## Choisir la stack
 
 ```text
-Lis docs/SPEC.md. Je dois choisir la stack technique et l'architecture
+Lis le cahier des charges (docs/spec/, en commençant par index.md). Je dois choisir la stack technique et l'architecture
 de cette application. Je ne suis pas développeur.
 Contraintes : [nombre d'utilisateurs, ordinateur/mobile, budget
 d'hébergement, données sensibles ou non…]
@@ -86,7 +103,7 @@ Privilégie la simplicité et les technologies très répandues.
 ## Démarrer une fonctionnalité
 
 ```text
-Lis docs/AVANCEMENT.md et la section [X] de docs/SPEC.md.
+Lis docs/AVANCEMENT.md, docs/spec/index.md et docs/spec/[domaine].md.
 On attaque : [fonctionnalité, en une ou deux phrases].
 Cas particuliers à gérer : [liste].
 C'est réussi quand : [critère, idéalement des scénarios de test].
@@ -137,7 +154,7 @@ La demande complète, avec la mise en forme automatique et les tests obligatoire
 
 ```text
 Utilise un sous-agent pour relire les changements de cette étape par
-rapport à docs/SPEC.md (section [X]). Vérifie que :
+rapport à docs/spec/[domaine].md. Vérifie que :
 - chaque règle de la spec est bien implémentée
 - chaque cas particulier a un test
 - rien d'autre n'a été modifié en dehors du sujet
@@ -163,7 +180,7 @@ Fais un état des lieux honnête du projet, sans complaisance :
 - ce qui fonctionne bien
 - ce qui est fragile ou mal organisé
 - ce qui n'est pas testé
-- les écarts avec docs/SPEC.md et docs/ARCHITECTURE.md
+- les écarts avec le cahier des charges (docs/spec/) et docs/ARCHITECTURE.md
 - les 3 actions prioritaires pour remettre le projet sur de bons rails
 Explique simplement, je ne suis pas développeur.
 ```
@@ -180,7 +197,7 @@ disable-model-invocation: true
 ---
 Fonctionnalité demandée : $ARGUMENTS
 
-1. Lis docs/AVANCEMENT.md, docs/ARCHITECTURE.md et les sections utiles de docs/SPEC.md.
+1. Lis docs/AVANCEMENT.md, docs/ARCHITECTURE.md et docs/spec/index.md et les fichiers de domaine concernés.
 2. Si une règle métier manque ou est ambiguë, pose-moi tes questions et attends mes réponses.
 3. Propose les scénarios de test (Étant donné / Quand / Alors), cas limites compris.
    Attends que je les valide.

@@ -12,7 +12,7 @@
 | Repartir à zéro | Nouvelle session | `/clear` | Changement de sujet, ou après deux échecs |
 | Reprendre une conversation | Liste des sessions | `claude --continue` / `--resume` | Au retour d'une pause |
 | Nommer une conversation | Renommer dans la liste des sessions | `/rename` | Pour la retrouver plus tard |
-| Faire lire un fichier | Joindre le fichier | `@` suivi du nom, ex. `@docs/SPEC.md` | Donner le contexte |
+| Faire lire un fichier | Joindre le fichier | `@` suivi du nom, ex. `@docs/spec/devis.md` | Donner le contexte |
 | Montrer une image | Coller ou glisser la capture | — | Bug visuel, maquette |
 
 ## Commandes utiles en plus

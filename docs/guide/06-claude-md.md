@@ -58,7 +58,7 @@ Le CLAUDE.md doit rester court, donc il **renvoie** vers d'autres documents que 
 
 | Fichier | Contenu | Chapitre |
 | --- | --- | --- |
-| `docs/SPEC.md` | Le cahier des charges | [4](/guide/04-cahier-des-charges) |
+| `docs/spec/` | Le cahier des charges : `index.md` + un fichier par domaine | [4](/guide/04-cahier-des-charges) |
 | `docs/ARCHITECTURE.md` | Les choix techniques et l'organisation du code | [5](/guide/05-stack-et-architecture) |
 | `docs/AVANCEMENT.md` | Ce qui est fait, ce qui reste à faire | [9](/guide/09-conversations) |
 | `docs/DECISIONS.md` | Les décisions importantes et leurs raisons | [9](/guide/09-conversations) |

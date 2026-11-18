@@ -24,7 +24,7 @@ Tu demandes à Claude d'utiliser un « sous-agent » (un Claude auxiliaire, avec
 
 ```text
 Utilise un sous-agent pour relire les changements de cette étape par
-rapport à docs/SPEC.md (section [X]). Vérifie que :
+rapport à docs/spec/[domaine].md. Vérifie que :
 - chaque règle de la spec est bien implémentée
 - chaque cas particulier a un test
 - rien d'autre n'a été modifié en dehors du sujet
@@ -43,7 +43,7 @@ Les tests sont ta garantie, donc ils méritent aussi un contrôle :
 ```text
 Utilise un sous-agent pour relire les tests de [fonctionnalité].
 Vérifie que :
-- chaque scénario de docs/SPEC.md a son test
+- chaque scénario de docs/spec/[domaine].md a son test
 - les tests vérifient vraiment le résultat (et pas juste que « ça ne plante pas »)
 - les cas limites sont couverts
 - aucun test n'a été affaibli ou désactivé
