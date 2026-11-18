@@ -1,9 +1,37 @@
 import { defineConfig } from 'vitepress'
 import llmstxt from 'vitepress-plugin-llms'
+import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 // Sur GitHub Pages, le site est servi sous /<nom-du-depot>/.
-// Le workflow de déploiement fournit BASE ; en local on garde la valeur par défaut.
+// Le workflow de déploiement fournit BASE et SITE_URL ; en local on garde les valeurs par défaut.
 const base = process.env.BASE || '/coder-sans-coder/'
+const siteOrigin = process.env.SITE_URL || 'https://opack.github.io'
+
+// Adresses publiques du guide, utilisables dans n'importe quelle page (texte, liens, blocs de code)
+// en écrivant %GUIDE_URL%, %LLMS_URL% ou %LLMS_FULL_URL%. Une seule source de vérité.
+const GUIDE_URL = siteOrigin + base
+const PLACEHOLDERS: Record<string, string> = {
+  '%LLMS_FULL_URL%': GUIDE_URL + 'llms-full.txt',
+  '%LLMS_URL%': GUIDE_URL + 'llms.txt',
+  '%GUIDE_URL%': GUIDE_URL,
+}
+const fillPlaceholders = (text: string) =>
+  Object.entries(PLACEHOLDERS).reduce((t, [k, v]) => t.replaceAll(k, v), text)
+
+// Les versions texte (llms.txt, pages .md) sont écrites directement depuis les sources :
+// on y remplace aussi les marqueurs, après la génération.
+function fillPlaceholdersInDir(dir: string) {
+  for (const name of readdirSync(dir)) {
+    const path = join(dir, name)
+    if (statSync(path).isDirectory()) fillPlaceholdersInDir(path)
+    else if (/\.(md|txt)$/.test(name)) {
+      const text = readFileSync(path, 'utf8')
+      const filled = fillPlaceholders(text)
+      if (filled !== text) writeFileSync(path, filled)
+    }
+  }
+}
 
 export const SITE_TITLE = "Coder sans coder"
 
@@ -17,13 +45,24 @@ export default defineConfig({
   lastUpdated: true,
   srcExclude: ['README.md'],
 
+  markdown: {
+    config(md) {
+      const parse = md.parse.bind(md)
+      md.parse = (src, env) => parse(fillPlaceholders(src), env)
+    },
+  },
+
+  buildEnd(siteConfig) {
+    fillPlaceholdersInDir(siteConfig.outDir)
+  },
+
   head: [['link', { rel: 'icon', href: `${base}favicon.svg` }]],
 
   vite: {
     plugins: [
       llmstxt({
         // URL absolue du site (fournie par le workflow) pour des liens complets dans llms.txt
-        domain: process.env.SITE_URL,
+        domain: siteOrigin,
         ignoreFiles: ['guide-complet.md', 'index.md'],
         description:
           "Guide pour une personne non développeuse qui construit une application avec Claude Code.",

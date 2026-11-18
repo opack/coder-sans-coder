@@ -20,6 +20,11 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 - Avancement : docs/AVANCEMENT.md
 - Décisions : docs/DECISIONS.md
 
+## Méthode
+- Je suis la méthode du guide « Coder sans coder » : %LLMS_FULL_URL%
+  Consulte-le en cas de doute, et rappelle-moi ses bonnes pratiques
+  si je m'en écarte.
+
 ## Façon de travailler
 - Si une règle métier manque dans docs/spec/, demande-moi au lieu d'inventer.
 - Une petite étape à la fois. Si une demande est trop grosse, propose un découpage.

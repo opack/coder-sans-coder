@@ -1,31 +1,19 @@
-<script setup>
-import { ref, onMounted } from 'vue'
-import { withBase } from 'vitepress'
-
-const full = ref(withBase('/llms-full.txt'))
-const index = ref(withBase('/llms.txt'))
-onMounted(() => {
-  full.value = new URL(withBase('/llms-full.txt'), location.origin).href
-  index.value = new URL(withBase('/llms.txt'), location.origin).href
-})
-</script>
-
 # Donner ce guide à Claude
 
 Ce guide existe aussi dans un format pensé pour les IA : du texte brut, sans mise en page, que Claude lit facilement.
 
-- **Le guide complet en un seul fichier** : <a :href="full">{{ full }}</a>
-- **Le sommaire avec un lien par chapitre** : <a :href="index">{{ index }}</a>
+- **Le guide complet en un seul fichier** : <%LLMS_FULL_URL%>
+- **Le sommaire avec un lien par chapitre** : <%LLMS_URL%>
 
 Chaque page du site existe aussi en version texte : ajoute `.md` à la fin de son adresse.
 
 ## L'utiliser dans ton projet
 
-Ajoute ces lignes dans le CLAUDE.md de ton projet (avec l'adresse ci-dessus) :
+Ajoute ces lignes dans le CLAUDE.md de ton projet :
 
 ```markdown
 ## Méthode de travail
-Je suis la méthode décrite dans ce guide : [adresse du guide complet]
+Je suis la méthode décrite dans ce guide : %LLMS_FULL_URL%
 Si tu as un doute sur la façon de travailler avec moi, consulte-le.
 Rappelle-moi les bonnes pratiques du guide si je m'en écarte.
 ```
@@ -35,7 +23,7 @@ Rappelle-moi les bonnes pratiques du guide si je m'en écarte.
 Tu peux aussi demander à Claude, de temps en temps :
 
 ```text
-Lis le guide [adresse du guide complet].
+Lis le guide %LLMS_FULL_URL%
 Compare avec la façon dont on travaille sur ce projet (CLAUDE.md,
 documents dans docs/, tests, historique Git).
 Dis-moi franchement ce que je ne respecte pas, et par quoi commencer
