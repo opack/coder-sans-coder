@@ -37,7 +37,7 @@ Claude écrit le code bien plus vite que n'importe qui. Mais il ne connaît pas 
 Chaque fonctionnalité suit le même cycle :
 
 ```text
-① Décrire      ce que je veux, en langage métier
+① Décrire      ce que je veux + les scénarios de test
 ② Planifier    mode plan : Claude propose, je valide
 ③ Construire   Claude code et écrit les tests
 ④ Vérifier     tests, essai moi-même, relecture
@@ -55,18 +55,26 @@ Si une étape échoue, on ne force pas : on revient en arrière.
 | Effort | `medium` par défaut, `high` pour les sujets délicats | [Chapitre 2](/guide/02-installer-et-regler) |
 | Permissions | Laisse Claude travailler, mais pas en roue libre sur ta production | [Chapitre 2](/guide/02-installer-et-regler) |
 | Posture | Claude franc, qui pose des questions et prouve ce qu'il affirme, réglé une fois pour toutes dans les paramètres | [Chapitre 2](/guide/02-installer-et-regler#regler-la-posture-de-claude) |
-| CLAUDE.md | Créé dès le premier jour, puis enrichi | [Chapitre 6](/guide/06-claude-md) |
-| Automatismes | Mise en forme du code et tests lancés automatiquement | [Chapitre 14](/guide/14-skills-et-hooks) |
+| CLAUDE.md | Créé dès que les fondations techniques sont choisies, puis enrichi | [Chapitre 6](/guide/06-claude-md) |
+| Automatismes | `/commit`, mise en forme du code et tests lancés automatiquement | [Chapitre 14](/guide/14-skills-et-hooks) |
 
-## Si tu refais une application à partir d'un prototype
+## Le parcours, dans l'ordre
 
-C'est un excellent point de départ, à condition de procéder dans le bon ordre :
+Que tu partes de zéro ou d'un prototype, voici l'ordre à suivre. Chaque étape renvoie au chapitre qui la détaille.
 
-1. Fais **décrire le prototype** par Claude dans un cahier des charges : écrans, règles, cas particuliers. Relis et corrige. → [Chapitre 4](/guide/04-cahier-des-charges)
-2. Transforme ces règles en **scénarios de test** en langage métier. Ce sont eux qui garantiront que la nouvelle version fait au moins aussi bien que l'ancienne. → [Chapitre 11](/guide/11-tests)
-3. Choisis les **fondations techniques** en connaissance de cause, avec un avis extérieur. → [Chapitre 5](/guide/05-stack-et-architecture)
-4. Reconstruis **fonctionnalité par fonctionnalité**, avec la boucle ci-dessus.
+1. **Régler Claude** : la posture, le modèle, les permissions. → [Chapitre 2](/guide/02-installer-et-regler)
+2. **Mettre le projet sous Git**, avec une copie sur GitHub, et installer la commande `/commit`. → [Chapitres 3](/guide/03-git) et [14](/guide/14-skills-et-hooks#skill-commit)
+3. **Écrire le cahier des charges**, domaine par domaine. Si tu as un prototype, Claude l'extrait pour toi. → [Chapitre 4](/guide/04-cahier-des-charges)
+4. **Transformer les règles en scénarios de test**, en français. → [Chapitre 11](/guide/11-tests)
+5. **Choisir les fondations techniques**, avec un avis extérieur. → [Chapitre 5](/guide/05-stack-et-architecture)
+6. **Poser le règlement du chantier** : le CLAUDE.md et les automatismes. → [Chapitres 6](/guide/06-claude-md) et [14](/guide/14-skills-et-hooks)
+7. **Dessiner les écrans** et fixer le style. → [Chapitre 7](/guide/07-design)
+8. **Construire, une petite étape à la fois**, avec le cycle ci-dessus. → [Chapitres 8 à 10](/guide/08-boucle-de-travail)
+9. **Contrôler** : relecture par un second Claude, sécurité. → [Chapitres 12](/guide/12-relecture) et [13](/guide/13-securite)
+10. **Mettre en ligne**. → [Chapitre 15](/guide/15-mise-en-ligne)
 
-::: warning Le piège classique
-Refaire l'application avec la même méthode que la première fois. Tu retomberas sur le même mur, juste un peu plus loin. Ce qui change vraiment le résultat, c'est la méthode, plus que le fait de repartir de zéro.
+Les chapitres du guide suivent à peu près cet ordre. L'exception : les tests (chapitre 11) sont expliqués après la boucle de travail, mais on écrit les premiers scénarios dès l'étape 4.
+
+::: warning Si tu refais une application existante
+Le piège classique : la refaire avec la même méthode que la première fois. Tu retomberas sur le même mur, juste un peu plus loin. Ce qui change vraiment le résultat, c'est la méthode, plus que le fait de repartir de zéro.
 :::

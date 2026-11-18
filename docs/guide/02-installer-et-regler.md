@@ -6,15 +6,14 @@ Le bon modèle, le bon niveau de réflexion et des permissions raisonnables : tr
 
 ## Où utiliser Claude Code
 
-Claude Code est l'outil de Claude spécialisé dans la construction de logiciels. Il peut lire et modifier les fichiers de ton projet, lancer des commandes, faire tourner les tests. Tu peux l'utiliser :
+Claude Code est l'outil de Claude spécialisé dans la construction de logiciels. Il peut lire et modifier les fichiers de ton projet, lancer des commandes, faire tourner les tests.
 
-- dans un **terminal** (la fenêtre texte noire), qui est l'outil le plus complet ;
-- dans l'**application de bureau Claude** ou dans **VS Code**, si tu préfères une interface plus visuelle.
+Le plus simple est de l'utiliser dans l'**application de bureau Claude**, onglet **Code** : tu choisis le dossier de ton projet, et tu écris ta demande comme dans une conversation normale. Il existe aussi dans un **terminal** (la fenêtre texte noire) et dans l'éditeur **VS Code**, mais tu n'en as pas besoin.
 
-Le fonctionnement est le même partout. Ce guide utilise les commandes du terminal, mais elles existent aussi ailleurs.
+Le fonctionnement est le même partout. Ce guide indique à chaque fois le geste dans l'application, et la commande équivalente entre parenthèses : les commandes qui commencent par `/` se tapent aussi dans la zone de saisie de l'application.
 
 ::: tip Ouvre toujours Claude dans le dossier de ton projet
-Claude travaille sur le dossier dans lequel tu l'as lancé. Si tu le lances au mauvais endroit, il ne trouvera pas ton application, ou pire, il ira modifier autre chose.
+Claude travaille sur le dossier que tu as choisi au démarrage de la session. Si tu le lances au mauvais endroit, il ne trouvera pas ton application, ou pire, il ira modifier autre chose.
 :::
 
 ## Choisir le modèle

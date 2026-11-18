@@ -32,8 +32,8 @@ Tu n'as pas à connaître les technologies. Tu dois en revanche savoir ce qui co
 ## Le faire choisir par Claude, correctement
 
 ```text
-Lis le cahier des charges (docs/spec/, en commençant par index.md). Je dois choisir la stack technique et l'architecture
-de cette application. Je ne suis pas développeur.
+Lis le cahier des charges (docs/spec/, en commençant par index.md).
+Je dois choisir la stack technique et l'architecture de cette application. Je ne suis pas développeur.
 Contraintes : [nombre d'utilisateurs, ordinateur/mobile, budget
 d'hébergement, données sensibles ou non…]
 Propose-moi 2 ou 3 options, avec pour chacune :
@@ -58,7 +58,8 @@ Une fois le choix fait, demande à Claude de le **consigner** :
 ```text
 Rédige docs/ARCHITECTURE.md : la stack choisie, l'organisation du code
 (quels dossiers, quel rôle pour chacun), et les principales règles à
-respecter pour que le code reste rangé. Garde-le court et clair.
+respecter pour que le code reste rangé. Organise le code par domaine,
+avec les mêmes domaines que docs/spec/. Garde-le court et clair.
 Puis ajoute dans CLAUDE.md un lien vers ce fichier.
 ```
 
@@ -68,6 +69,7 @@ Ce document évite que Claude réinvente l'organisation à chaque conversation. 
 
 Tu n'as pas à les appliquer toi-même, mais tu peux les exiger de Claude :
 
+- **Un domaine du cahier des charges, un morceau du code.** Les clients, les devis, la facturation… chacun a son coin dans le code, avec le même nom que dans `docs/spec/`. Quand tu parles des devis, Claude sait exactement où regarder.
 - **Chaque chose à sa place.** L'affichage, les règles métier et le stockage des données sont séparés. On peut changer l'apparence d'un écran sans risquer de casser un calcul.
 - **Une règle, un seul endroit.** Le calcul de la TVA existe une fois, pas dans chaque écran.
 - **Des petits morceaux.** Des fichiers courts, chacun avec un rôle clair. Si un fichier fait des milliers de lignes, c'est un signal d'alarme.

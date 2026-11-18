@@ -53,6 +53,8 @@ Si chaque conversation repart de zéro, il faut que **ce qui compte soit écrit 
 | `docs/AVANCEMENT.md` | Ce qui est fait, ce qui est en cours, ce qui reste |
 | `docs/DECISIONS.md` | Les décisions importantes et **pourquoi** on les a prises |
 
+Pas besoin de créer ces fichiers à l'avance : demande à Claude de les créer la première fois qu'il en a besoin.
+
 En fin de tâche, prends le réflexe :
 
 ```text
@@ -70,4 +72,4 @@ Lis docs/AVANCEMENT.md. On attaque l'étape suivante : [laquelle].
 
 Parfois, tu veux reprendre une conversation interrompue (tu as fermé l'ordinateur au milieu d'une tâche). Retrouve-la dans la liste des sessions de l'application et rouvre-la (en terminal : `claude --continue` pour la dernière, `claude --resume` pour choisir).
 
-Astuce : donne un nom parlant à tes sessions (renomme-les dans la liste, ou avec la commande `/rename`) (par exemple `facturation-avoirs`), pour les retrouver facilement.
+Astuce : donne un nom parlant à tes sessions, par exemple « facturation-avoirs », pour les retrouver facilement. Renomme-les dans la liste des sessions, ou avec la commande `/rename`.

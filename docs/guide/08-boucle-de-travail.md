@@ -7,7 +7,7 @@ Chaque fonctionnalité suit le même cycle : décrire, planifier, construire, v�
 ## Le cycle
 
 ```text
-① Décrire      ce que je veux, en langage métier
+① Décrire      ce que je veux + les scénarios de test
 ② Planifier    mode plan : Claude propose, je valide
 ③ Construire   Claude code et écrit les tests
 ④ Vérifier     tests, essai moi-même, relecture
@@ -17,7 +17,7 @@ Chaque fonctionnalité suit le même cycle : décrire, planifier, construire, v�
 
 ## ① Décrire
 
-Tu expliques ce que tu veux, **du point de vue de l'utilisateur**, en t'appuyant sur le cahier des charges. Tu précises les cas particuliers et comment tu sauras que c'est réussi. Voir le [chapitre 10](/guide/10-formuler).
+Tu expliques ce que tu veux, **du point de vue de l'utilisateur**, en t'appuyant sur le cahier des charges. Tu précises les cas particuliers et comment tu sauras que c'est réussi : idéalement, les **scénarios de test** que la fonctionnalité devra passer ([chapitre 11](/guide/11-tests)). Voir aussi le [chapitre 10](/guide/10-formuler).
 
 ## ② Planifier : le mode plan
 

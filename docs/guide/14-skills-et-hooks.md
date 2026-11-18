@@ -4,7 +4,7 @@
 Les skills sont des « fiches méthode » que Claude consulte quand il en a besoin. Les hooks sont des automatismes qui se déclenchent à coup sûr, sans dépendre de la bonne volonté de Claude.
 :::
 
-Ce chapitre vient tard, et c'est volontaire : ces outils sont utiles une fois que tu as pris le rythme de la [boucle de travail](/guide/08-boucle-de-travail). Avant, ils ajoutent de la complexité sans bénéfice.
+Deux éléments de ce chapitre sont à installer tôt : la skill `/commit`, dès le premier jour, et les hooks de mise en forme et de tests, dès que les fondations techniques sont posées. Pour le reste (créer tes propres skills), attends d'avoir pris le rythme de la [boucle de travail](/guide/08-boucle-de-travail) : avant, ça ajoute de la complexité sans bénéfice.
 
 ## Les skills : des fiches méthode
 
@@ -51,8 +51,10 @@ disable-model-invocation: true
 Sauvegarde dans Git le travail en cours. Je ne suis pas développeur :
 parle-moi simplement, sans jargon.
 
-1. Lance les tests. S'ils échouent, ne fais pas de commit : explique-moi
-   simplement ce qui ne va pas et propose de corriger.
+1. Lance les tests (s'il n'y en a pas encore, par exemple parce qu'on
+   n'en est qu'au cahier des charges, passe à l'étape suivante).
+   S'ils échouent, ne fais pas de commit : explique-moi simplement ce
+   qui ne va pas et propose de corriger.
 2. Regarde tous les changements en cours. Sélectionne uniquement ceux
    qui concernent le travail en cours (si besoin, seulement les parties
    concernées d'un fichier). S'il y a d'autres changements sans rapport,

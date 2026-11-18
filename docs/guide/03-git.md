@@ -32,14 +32,15 @@ Claude connaît Git parfaitement. Tu peux tout lui demander en français :
 
 | Ce que tu veux | Ce que tu dis à Claude |
 | --- | --- |
+| Démarrer | « Mets ce projet sous Git. » (une seule fois, au début) |
 | Sauvegarder | « Fais un commit avec un message clair. » |
 | Voir ce qui a changé | « Résume-moi ce qui a changé depuis le dernier commit. » |
 | Voir l'historique | « Montre-moi les 10 derniers commits, en français. » |
 | Annuler les changements en cours | « Annule tout ce qui a été modifié depuis le dernier commit. » |
 | Revenir à une ancienne version | « Reviens à la version d'avant l'ajout de la facturation. » |
 
-::: tip Mets-le dans ton CLAUDE.md
-Ajoute une règle du genre : « Propose-moi un commit à chaque fois qu'une étape est terminée et que les tests passent. » Claude y pensera pour toi.
+::: tip Claude peut y penser pour toi
+Le [modèle de CLAUDE.md](/annexes/modeles#claude-md) (le fichier de règles du projet, expliqué au [chapitre 6](/guide/06-claude-md)) contient la règle : « Quand une étape est terminée et que les tests passent, rappelle-moi de sauvegarder. »
 :::
 
 ## Encore plus simple : la commande `/commit`
@@ -48,7 +49,7 @@ Sauvegarder proprement demande plusieurs vérifications : les tests passent-ils 
 
 Plutôt que de le redemander à chaque fois, tu peux apprendre tout ça à Claude une bonne fois, sous la forme d'une **skill** : une fiche méthode qu'il suit quand tu tapes `/commit`. Elle vérifie tout, écrit le message en français et fait la sauvegarde. Tu n'as plus qu'à taper une commande à la fin de chaque étape.
 
-La demande pour l'installer est prête à copier dans le [chapitre 14](/guide/14-skills-et-hooks#skill-commit). Tu peux l'installer dès le premier jour, même si les skills ne sont expliquées en détail que plus tard.
+La demande pour l'installer est prête à copier dans le [chapitre 14](/guide/14-skills-et-hooks#skill-commit). Tu peux l'installer dès le premier jour, même si les skills ne sont expliquées en détail que plus tard : elle sert aussi pour sauvegarder le cahier des charges, avant même qu'il y ait du code.
 
 ## Sauvegarder en ligne : GitHub
 

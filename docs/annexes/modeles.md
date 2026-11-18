@@ -32,7 +32,8 @@ Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque blo
 - Ne dis jamais « c'est fait » sans montrer le résultat des tests.
 - Ne modifie, ne désactive, ne supprime jamais un test existant sans mon accord.
 - Ne modifie que ce qui concerne la tâche en cours.
-- Quand une étape est terminée et que les tests passent, rappelle-moi de lancer /commit.
+- Quand une étape est terminée et que les tests passent, rappelle-moi de
+  sauvegarder avec /commit.
 - Ne crée jamais de branche Git sans me le proposer et m'expliquer pourquoi.
 - En fin de tâche, mets à jour docs/AVANCEMENT.md.
 
@@ -69,7 +70,8 @@ en français simple.
 ### À partir d'un prototype : 1. le découpage
 
 ```text
-Analyse cette application. Sans rien rédiger de détaillé pour l'instant,
+Analyse l'application du dossier prototype/ (lecture seule, ne la modifie
+pas). Sans rien rédiger de détaillé pour l'instant,
 propose-moi :
 - une vue d'ensemble : à quoi elle sert, qui l'utilise
 - un découpage en domaines métier (3 à 8), avec pour chacun les écrans
@@ -80,8 +82,8 @@ Attends que je valide le découpage, puis écris docs/spec/index.md.
 ### À partir d'un prototype : 2. un domaine (une session par domaine)
 
 ```text
-Lis docs/spec/index.md. Analyse dans l'application tout ce qui concerne
-le domaine [nom] et rédige docs/spec/[nom].md, en français, sans jargon :
+Lis docs/spec/index.md. Analyse dans prototype/ (lecture seule) tout ce
+qui concerne le domaine [nom] et rédige docs/spec/[nom].md, en français, sans jargon :
 - les écrans et ce qu'on peut y faire
 - les objets métier et leurs informations
 - toutes les règles de gestion et les calculs, avec des exemples chiffrés
@@ -93,8 +95,8 @@ Ne décris pas comment c'est codé, seulement ce que ça fait.
 ## Choisir la stack
 
 ```text
-Lis le cahier des charges (docs/spec/, en commençant par index.md). Je dois choisir la stack technique et l'architecture
-de cette application. Je ne suis pas développeur.
+Lis le cahier des charges (docs/spec/, en commençant par index.md).
+Je dois choisir la stack technique et l'architecture de cette application. Je ne suis pas développeur.
 Contraintes : [nombre d'utilisateurs, ordinateur/mobile, budget
 d'hébergement, données sensibles ou non…]
 Propose-moi 2 ou 3 options, avec pour chacune :

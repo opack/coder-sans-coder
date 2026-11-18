@@ -88,10 +88,15 @@ Si l'interview est longue, ne fais pas tout dans la même conversation. Une fois
 
 Si tu as déjà une première version de l'application, même imparfaite, c'est une mine d'or : elle contient toutes les règles que tu as découvertes en la construisant. Mais ces règles sont enfouies dans le code. Il faut les **extraire**. On procède en deux temps.
 
+::: tip Où ranger le prototype
+La nouvelle application vit dans un **nouveau dossier**, avec son propre Git. Place une copie du prototype dans un sous-dossier `prototype/` de ce nouveau projet, et dis à Claude qu'il sert seulement de référence : il peut le lire, jamais le modifier. Tu pourras supprimer ce sous-dossier une fois la nouvelle version terminée.
+:::
+
 D'abord, la vue d'ensemble et le découpage :
 
 ```text
-Analyse cette application. Sans rien rédiger de détaillé pour l'instant,
+Analyse l'application du dossier prototype/ (lecture seule, ne la modifie
+pas). Sans rien rédiger de détaillé pour l'instant,
 propose-moi :
 - une vue d'ensemble : à quoi elle sert, qui l'utilise
 - un découpage en domaines métier (3 à 8), avec pour chacun les écrans
@@ -102,8 +107,8 @@ Attends que je valide le découpage, puis écris docs/spec/index.md.
 Ensuite, un domaine à la fois, chacun dans sa propre session :
 
 ```text
-Lis docs/spec/index.md. Analyse dans l'application tout ce qui concerne
-le domaine [nom] et rédige docs/spec/[nom].md, en français, sans jargon :
+Lis docs/spec/index.md. Analyse dans prototype/ (lecture seule) tout ce
+qui concerne le domaine [nom] et rédige docs/spec/[nom].md, en français, sans jargon :
 - les écrans et ce qu'on peut y faire
 - les objets métier et leurs informations
 - toutes les règles de gestion et les calculs, avec des exemples chiffrés
@@ -115,7 +120,7 @@ Ne décris pas comment c'est codé, seulement ce que ça fait.
 Après chaque domaine, **relis attentivement**. Corrige ce qui est faux, complète ce qui manque, et tranche sur les bizarreries : est-ce un bug ou une règle voulue ?
 
 ::: tip Le prototype comme juge de paix
-Une fois le cahier des charges validé, les règles qu'il contient deviennent des **scénarios de test** ([chapitre 11](/guide/11-tests)). Tu peux même vérifier ces scénarios sur l'ancienne application. Ensuite, la nouvelle version devra les passer elle aussi : c'est la garantie qu'elle fait au moins aussi bien que l'ancienne.
+Une fois le cahier des charges validé, les règles qu'il contient deviennent des **scénarios de test** ([chapitre 11](/guide/11-tests)). Tu peux même vérifier ces scénarios sur l'ancienne application, en les essayant toi-même ou en demandant à Claude de les jouer dessus. Ensuite, la nouvelle version devra les passer elle aussi : c'est la garantie qu'elle fait au moins aussi bien que l'ancienne.
 :::
 
 ## Un document vivant

@@ -8,11 +8,13 @@ Le CLAUDE.md est un fichier que Claude relit au début de chaque conversation. C
 
 Claude ne se souvient de rien d'une conversation à l'autre. Sans CLAUDE.md, tu dois lui réexpliquer à chaque fois comment fonctionne le projet, comment lancer les tests, ce que tu attends de lui. Avec un CLAUDE.md, il démarre chaque conversation en connaissant les règles.
 
-C'est un fichier texte nommé `CLAUDE.md`, placé à la racine de ton projet.
+C'est un fichier texte nommé `CLAUDE.md`, placé dans le dossier principal de ton projet.
 
 ## Le créer
 
-Demande simplement à Claude : « Crée le fichier CLAUDE.md de ce projet. » (ou utilise la commande `/init`). Claude analyse ton projet et écrit une première version. Ensuite, tu l'enrichis.
+Le plus simple : pars du [modèle à copier](/annexes/modeles#claude-md) et demande à Claude de l'adapter : « Crée le fichier CLAUDE.md de ce projet à partir de ce modèle, et complète ce que tu peux (commandes, documents existants). » Tu peux aussi le faire écrire de zéro avec la commande `/init`. Ensuite, tu l'enrichis au fil du temps.
+
+Le bon moment pour le créer : dès que les fondations techniques sont choisies ([chapitre 5](/guide/05-stack-et-architecture)). Avant, il n'y a pas encore de commandes à y mettre.
 
 ## Ce qu'on y met
 
