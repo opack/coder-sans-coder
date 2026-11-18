@@ -36,7 +36,7 @@ Toutes les commandes qui commencent par `/` peuvent être tapées directement da
 | Tâche | Modèle | Effort |
 | --- | --- | --- |
 | Question simple, petite retouche | Sonnet ou Haiku | `low` |
-| Fonctionnalité bien décrite | Sonnet, ou `opusplan` : Opus pour le plan, Sonnet pour construire ([chapitre 2](/guide/02-installer-et-regler#choisir-le-modele)) | `medium` |
+| Fonctionnalité bien décrite | Sonnet (ou Opus, si tu préfères ne pas changer de modèle) | `medium` |
 | Bug tenace, règle métier délicate | Opus | `high` |
 | Cahier des charges, architecture, revue de sécurité | Opus | `high` ou `xhigh` |
 

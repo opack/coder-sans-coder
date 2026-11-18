@@ -28,8 +28,12 @@ Claude existe en plusieurs « tailles ». Les plus gros réfléchissent mieux ma
 
 Pour changer de modèle : utilise le sélecteur de modèle, au bout de la zone de saisie, ou la commande `/model`.
 
-::: tip Le combo malin
-Le réglage `opusplan` bascule automatiquement de modèle selon le moment : Opus quand tu es en mode plan (pour bien réfléchir), puis Sonnet quand Claude construit (plus rapide et moins cher). C'est un bon équilibre entre qualité et coût. Il se choisit avec la commande `/model opusplan`.
+::: tip Tu ne veux pas jongler entre les modèles ?
+Reste sur **Opus** avec un effort `medium` pour tout : c'est un peu plus cher que Sonnet pour le travail courant, mais c'est le réglage le plus simple et le plus sûr. Tu ne changes de réglage que pour monter l'effort sur les sujets délicats.
+:::
+
+::: details Pour plus tard : le réglage opusplan
+Il existe un réglage qui change de modèle tout seul : Opus quand tu es en mode plan, puis Sonnet quand Claude construit. Il n'apparaît pas dans le sélecteur de modèle de l'application : il faut taper la commande `/model opusplan` dans la zone de saisie. Si la commande n'est pas reconnue chez toi, ignore cette astuce.
 :::
 
 ## Choisir le niveau d'effort
