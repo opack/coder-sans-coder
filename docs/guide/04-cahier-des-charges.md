@@ -72,7 +72,13 @@ la vue d'ensemble, puis un fichier par domaine, au fur et à mesure,
 en français simple.
 ```
 
-Utilise un modèle qui réfléchit bien pour cette étape (Opus, effort `high`). C'est le moment où ça vaut le coup.
+Utilise Opus pour cette étape : c'est le moment où un modèle qui réfléchit bien vaut le coup. Garde l'effort `medium` pendant l'interview, pour que les questions s'enchaînent sans attente. Monte-le à `high` pour les étapes de synthèse : proposer le découpage en domaines, puis la relecture finale :
+
+```text
+Relis tout docs/spec/. Cherche les contradictions entre domaines,
+les règles floues, les cas particuliers oubliés et les questions
+restées sans réponse. Liste-les, sans rien corriger : je trancherai.
+```
 
 ::: tip Un domaine, une session
 Si l'interview est longue, ne fais pas tout dans la même conversation. Une fois la vue d'ensemble écrite, ouvre une nouvelle session par domaine : « Lis docs/spec/index.md. Interviewe-moi sur le domaine Facturation et rédige docs/spec/facturation.md. » ([chapitre 9](/guide/09-conversations))
