@@ -5,8 +5,8 @@
 | Ce que tu veux faire | Dans l'application | Au clavier / en commande | Quand |
 | --- | --- | --- | --- |
 | Passer en mode plan | Sélecteur de mode, à côté du bouton d'envoi : **Plan** | `Shift+Tab` | Avant une tâche importante |
-| Changer de modèle | Sélecteur de modèle, au bout de la zone de saisie | `/model` | Selon la difficulté de la tâche |
-| Changer le niveau de réflexion | Dans le sélecteur de modèle | `/effort` | Monter pour les sujets délicats |
+| Changer de modèle | Sélecteur de modèle, au bout de la zone de saisie | — | Selon la difficulté de la tâche |
+| Changer le niveau de réflexion | Dans le sélecteur de modèle | — | Monter pour les sujets délicats |
 | Arrêter Claude | Bouton d'arrêt | `Échap` | Il part dans la mauvaise direction |
 | Revenir en arrière | — | `Échap` deux fois, ou `/rewind` | Annuler ce qu'il vient de faire |
 | Repartir à zéro | Nouvelle session | `/clear` | Changement de sujet, ou après deux échecs |
@@ -28,7 +28,7 @@
 | `/commit` | Sauvegarde le travail en cours, message en français (skill à installer, [chapitre 14](/guide/14-skills-et-hooks#skill-commit)) |
 
 ::: tip Les commandes marchent aussi dans l'application
-Toutes les commandes qui commencent par `/` peuvent être tapées directement dans la zone de saisie de l'application.
+La plupart des commandes qui commencent par `/` peuvent être tapées directement dans la zone de saisie de l'application. Exception : le modèle et l'effort se changent uniquement avec le sélecteur.
 :::
 
 ## Quel modèle, quel effort ?

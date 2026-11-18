@@ -24,7 +24,7 @@ Si Claude n'a pas réussi après **deux tentatives** sur le même problème :
 2. Si ses tentatives ont abîmé le code, reviens en arrière (`Échap` deux fois ou `/rewind`, ou Git).
 3. Ouvre une nouvelle session (ou `/clear`).
 4. Repars avec une demande plus précise, qui inclut ce que tu as appris : « J'ai déjà essayé X et Y, ça n'a pas marché parce que… ».
-5. Monte le niveau de réflexion à `high` ou passe sur Opus (sélecteur de modèle, ou `/effort high`).
+5. Monte le niveau de réflexion à `high` ou passe sur Opus (avec le sélecteur de modèle).
 
 ## Faire faire un état des lieux
 

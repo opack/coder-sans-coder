@@ -10,7 +10,7 @@ Claude Code est l'outil de Claude spécialisé dans la construction de logiciels
 
 Le plus simple est de l'utiliser dans l'**application de bureau Claude**, onglet **Code** : tu choisis le dossier de ton projet, et tu écris ta demande comme dans une conversation normale. Il existe aussi dans un **terminal** (la fenêtre texte noire) et dans l'éditeur **VS Code**, mais tu n'en as pas besoin.
 
-Le fonctionnement est le même partout. Ce guide indique à chaque fois le geste dans l'application, et la commande équivalente entre parenthèses : les commandes qui commencent par `/` se tapent aussi dans la zone de saisie de l'application.
+Le fonctionnement est le même partout. Ce guide indique à chaque fois le geste dans l'application, et la commande équivalente entre parenthèses : la plupart des commandes qui commencent par `/` se tapent aussi dans la zone de saisie de l'application. Exception : le modèle et l'effort se changent uniquement avec le sélecteur.
 
 ::: tip Ouvre toujours Claude dans le dossier de ton projet
 Claude travaille sur le dossier que tu as choisi au démarrage de la session. Si tu le lances au mauvais endroit, il ne trouvera pas ton application, ou pire, il ira modifier autre chose.
@@ -26,15 +26,12 @@ Claude existe en plusieurs « tailles ». Les plus gros réfléchissent mieux ma
 | **Sonnet** | Construire au quotidien une fonctionnalité bien décrite | Le chef d'équipe |
 | **Haiku** | Petites tâches simples et rapides | L'apprenti |
 
-Pour changer de modèle : utilise le sélecteur de modèle, au bout de la zone de saisie, ou la commande `/model`.
+Pour changer de modèle : utilise le sélecteur de modèle, au bout de la zone de saisie.
 
 ::: tip Tu ne veux pas jongler entre les modèles ?
 Reste sur **Opus** avec un effort `medium` pour tout : c'est un peu plus cher que Sonnet pour le travail courant, mais c'est le réglage le plus simple et le plus sûr. Tu ne changes de réglage que pour monter l'effort sur les sujets délicats.
 :::
 
-::: details Pour plus tard : le réglage opusplan
-Il existe un réglage qui change de modèle tout seul : Opus quand tu es en mode plan, puis Sonnet quand Claude construit. Il n'apparaît pas dans le sélecteur de modèle de l'application : il faut taper la commande `/model opusplan` dans la zone de saisie. Si la commande n'est pas reconnue chez toi, ignore cette astuce.
-:::
 
 ## Choisir le niveau d'effort
 
@@ -45,7 +42,7 @@ En plus du modèle, tu choisis **combien Claude réfléchit** avant d'agir. C'es
 - `xhigh` ou `max` : pour les problèmes vraiment difficiles. Plus lent, plus cher, et parfois Claude réfléchit trop.
 - `low` : pour les questions simples et les petites retouches.
 
-Pour changer : le niveau d'effort se règle dans le sélecteur de modèle, ou avec la commande `/effort` (par exemple `/effort high`).
+Pour changer : le niveau d'effort se règle dans le même sélecteur que le modèle.
 
 ::: warning Plus n'est pas toujours mieux
 Mettre `max` partout ne rend pas Claude meilleur : il devient lent, coûteux, et il complique parfois des choses simples. Monte le niveau quand la tâche le mérite, pas par défaut.
