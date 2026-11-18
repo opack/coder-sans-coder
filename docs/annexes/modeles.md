@@ -1,4 +1,4 @@
-# Modèles à copier
+# Modèles à copier {#modeles}
 
 Des textes prêts à l'emploi. Copie-les (bouton en haut à droite de chaque bloc), remplace ce qui est entre crochets, colle dans Claude.
 
@@ -93,7 +93,7 @@ C'est réussi quand : [critère, idéalement des scénarios de test].
 Pose-moi d'abord tes questions, puis propose un plan.
 ```
 
-(À lancer en mode plan : `Shift+Tab`.)
+(À lancer en mode plan : sélecteur de mode à côté du bouton d'envoi, ou `Shift+Tab`.)
 
 ## Écrire des scénarios de test
 

@@ -1,4 +1,4 @@
-# 11. Les tests en langage métier
+# 11. Les tests en langage métier {#chapitre-11}
 
 ::: info En une phrase
 Un test, c'est une vérification automatique qui dit « ça marche » ou « ça ne marche pas ». Tu les décris en français, Claude les code, et ils deviennent ta garantie de qualité.

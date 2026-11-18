@@ -1,4 +1,4 @@
-# 15. Mettre en ligne
+# 15. Mettre en ligne {#chapitre-15}
 
 ::: info En une phrase
 L'application que tu testes et celle qu'utilisent tes clients ne doivent pas être la même. On essaie d'abord à côté, puis on publie.

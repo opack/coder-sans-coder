@@ -1,4 +1,4 @@
-# Démarrage rapide
+# Démarrage rapide {#demarrage-rapide}
 
 Cette page tient en dix minutes de lecture. Elle donne l'essentiel. Chaque point renvoie vers le chapitre qui le détaille, à lire quand tu en as besoin.
 
@@ -16,9 +16,9 @@ Claude écrit le code bien plus vite que n'importe qui. Mais il ne connaît pas 
 
 2. **Écris le cahier des charges avant de coder.** Un document qui décrit ton application en français : les écrans, les règles de ton métier, les cas particuliers. Claude peut t'aider à l'écrire en t'interviewant. → [Chapitre 4](/guide/04-cahier-des-charges)
 
-3. **Une conversation = un sujet.** Quand tu passes à autre chose, tu repars d'une conversation vierge (`/clear`). Une conversation qui s'éternise rend Claude confus et oublieux. → [Chapitre 9](/guide/09-conversations)
+3. **Une conversation = un sujet.** Quand tu passes à autre chose, tu repars d'une conversation vierge (nouvelle session, ou la commande `/clear`). Une conversation qui s'éternise rend Claude confus et oublieux. → [Chapitre 9](/guide/09-conversations)
 
-4. **Fais planifier avant de faire construire.** Pour toute demande un peu grosse, passe en *mode plan* (`Shift+Tab`) : Claude réfléchit et te propose un plan sans rien toucher. Tu valides, puis il construit. → [Chapitre 8](/guide/08-boucle-de-travail)
+4. **Fais planifier avant de faire construire.** Pour toute demande un peu grosse, passe en *mode plan* (sélecteur de mode à côté du bouton d'envoi, ou `Shift+Tab`) : Claude réfléchit et te propose un plan sans rien toucher. Tu valides, puis il construit. → [Chapitre 8](/guide/08-boucle-de-travail)
 
 5. **Avance par petites étapes.** Une fonctionnalité à la fois. Jamais « fais-moi tout le module facturation » d'un coup. → [Chapitre 8](/guide/08-boucle-de-travail)
 
@@ -42,7 +42,7 @@ Chaque fonctionnalité suit le même cycle :
 ③ Construire   Claude code et écrit les tests
 ④ Vérifier     tests, essai moi-même, relecture
 ⑤ Sauvegarder  commit Git : « cette version marche »
-⑥ Repartir     /clear, et étape suivante
+⑥ Repartir     nouvelle session, étape suivante
 ```
 
 Si une étape échoue, on ne force pas : on revient en arrière.

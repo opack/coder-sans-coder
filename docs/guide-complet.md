@@ -17,6 +17,51 @@ Claude construit. Toi, tu décides, tu expliques et tu vérifies. Ce guide t'app
 
 </div>
 
+<div class="print-toc">
+
+## Sommaire {#sommaire}
+
+- [Démarrage rapide](#demarrage-rapide)
+
+**Les fondations**
+
+- [1. Ton rôle : maître d'ouvrage](#chapitre-01)
+- [2. Installer et régler Claude](#chapitre-02)
+- [3. Git, ton bouton « annuler »](#chapitre-03)
+
+**Préparer le chantier**
+
+- [4. Le cahier des charges](#chapitre-04)
+- [5. Choisir les fondations techniques](#chapitre-05)
+- [6. Le CLAUDE.md, règlement du chantier](#chapitre-06)
+- [7. Le design de l'interface](#chapitre-07)
+
+**Construire**
+
+- [8. La boucle de travail](#chapitre-08)
+- [9. Une conversation, un sujet](#chapitre-09)
+- [10. Bien formuler ses demandes](#chapitre-10)
+
+**Contrôler la qualité**
+
+- [11. Les tests en langage métier](#chapitre-11)
+- [12. Faire relire par un second Claude](#chapitre-12)
+- [13. Sécurité et données](#chapitre-13)
+
+**Aller plus loin**
+
+- [14. Automatiser : skills et hooks](#chapitre-14)
+- [15. Mettre en ligne](#chapitre-15)
+- [16. Quand ça coince](#chapitre-16)
+
+**Annexes**
+
+- [Modèles à copier](#modeles)
+- [Aide-mémoire](#aide-memoire)
+- [Glossaire](#glossaire)
+
+</div>
+
 <!--@include: ./demarrage-rapide.md-->
 
 <!--@include: ./guide/01-ton-role.md-->

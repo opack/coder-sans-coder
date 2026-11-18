@@ -1,4 +1,4 @@
-# 12. Faire relire par un second Claude
+# 12. Faire relire par un second Claude {#chapitre-12}
 
 ::: info En une phrase
 Celui qui a construit n'est pas le mieux placé pour juger. Un Claude « neuf », qui n'a pas vu le raisonnement du premier, repère ce qui a été oublié ou mal fait.
@@ -34,7 +34,7 @@ Ne signale que les vrais problèmes, pas les préférences de style.
 
 ### 3. La relecture dans une autre conversation
 
-Ouvre une **nouvelle** fenêtre Claude (ou fais `/clear`), et demande une relecture du dernier travail. Puis rapporte les remarques dans la conversation de travail : « Voici les remarques du relecteur : […]. Corrige ce qui est justifié. »
+Ouvre une **nouvelle** session (ou fais `/clear`), et demande une relecture du dernier travail. Puis rapporte les remarques dans la conversation de travail : « Voici les remarques du relecteur : […]. Corrige ce qui est justifié. »
 
 ## Relire aussi les tests
 

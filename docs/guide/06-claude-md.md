@@ -1,4 +1,4 @@
-# 6. Le CLAUDE.md, règlement du chantier
+# 6. Le CLAUDE.md, règlement du chantier {#chapitre-06}
 
 ::: info En une phrase
 Le CLAUDE.md est un fichier que Claude relit au début de chaque conversation. C'est là que tu écris les règles qu'il doit toujours respecter sur ton projet.
@@ -12,7 +12,7 @@ C'est un fichier texte nommé `CLAUDE.md`, placé à la racine de ton projet.
 
 ## Le créer
 
-Dans Claude Code, tape `/init`. Claude analyse ton projet et écrit une première version. Ensuite, tu l'enrichis.
+Demande simplement à Claude : « Crée le fichier CLAUDE.md de ce projet. » (ou utilise la commande `/init`). Claude analyse ton projet et écrit une première version. Ensuite, tu l'enrichis.
 
 ## Ce qu'on y met
 

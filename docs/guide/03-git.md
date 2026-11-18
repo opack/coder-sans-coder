@@ -1,4 +1,4 @@
-# 3. Git, ton bouton « annuler »
+# 3. Git, ton bouton « annuler » {#chapitre-03}
 
 ::: info En une phrase
 Git prend des photos de ton application à chaque étape qui fonctionne, pour pouvoir revenir en arrière quand quelque chose casse.
@@ -62,7 +62,7 @@ Demande à Claude : « Aide-moi à mettre ce projet sur GitHub, en dépôt priv�
 
 ## Et le retour en arrière de Claude ?
 
-Claude Code a aussi son propre bouton « annuler » : `Échap Échap` (ou `/rewind`). Il permet de revenir à un moment précédent de la conversation, et de restaurer les fichiers tels qu'ils étaient à ce moment-là.
+Claude Code a aussi son propre bouton « annuler » : la touche `Échap` pressée deux fois, ou la commande `/rewind`. Il permet de revenir à un moment précédent de la conversation, et de restaurer les fichiers tels qu'ils étaient à ce moment-là.
 
 C'est pratique pour annuler la dernière action, mais **ça ne remplace pas Git** : ça ne suit pas tout, et ça ne sauvegarde rien en ligne. Utilise les deux :
 

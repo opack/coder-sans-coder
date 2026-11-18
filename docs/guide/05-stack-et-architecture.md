@@ -1,4 +1,4 @@
-# 5. Choisir les fondations techniques
+# 5. Choisir les fondations techniques {#chapitre-05}
 
 ::: info En une phrase
 Le choix des technologies et de l'organisation du code se fait une fois, au début. Il décide si l'application pourra grandir sereinement ou finira en plat de spaghettis.

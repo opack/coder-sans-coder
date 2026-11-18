@@ -1,4 +1,4 @@
-# 4. Le cahier des charges
+# 4. Le cahier des charges {#chapitre-04}
 
 ::: info En une phrase
 Avant de construire, on écrit en français ce que l'application doit faire. C'est la mémoire du projet, et c'est la référence pour juger si le résultat est bon.

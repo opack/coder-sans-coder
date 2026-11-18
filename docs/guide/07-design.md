@@ -1,4 +1,4 @@
-# 7. Le design de l'interface
+# 7. Le design de l'interface {#chapitre-07}
 
 ::: info En une phrase
 On dessine les écrans avant de les coder, et on fixe une fois pour toutes le style visuel, pour que toute l'application soit cohérente.

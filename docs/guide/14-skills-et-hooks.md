@@ -1,4 +1,4 @@
-# 14. Automatiser : skills et hooks
+# 14. Automatiser : skills et hooks {#chapitre-14}
 
 ::: info En une phrase
 Les skills sont des « fiches méthode » que Claude consulte quand il en a besoin. Les hooks sont des automatismes qui se déclenchent à coup sûr, sans dépendre de la bonne volonté de Claude.

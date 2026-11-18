@@ -61,3 +61,13 @@
   .vp-doc .print-cover h1 { font-size: 38pt; border: 0; color: var(--vp-c-brand-1); }
   .vp-doc .print-cover p { font-size: 14pt; }
 }
+
+/* Sommaire du guide complet / PDF */
+.vp-doc .print-toc ul { list-style: none; padding-left: 0; margin: 4px 0 14px; }
+.vp-doc .print-toc li { margin: 2px 0; }
+.vp-doc .print-toc p { margin: 14px 0 4px; }
+@media print {
+  .vp-doc .print-toc { page-break-after: always; }
+  .vp-doc .print-toc h2 { border-left: 0; padding-left: 0; font-size: 22pt; color: var(--vp-c-brand-1); }
+  .vp-doc .print-toc a { text-decoration: none; }
+}

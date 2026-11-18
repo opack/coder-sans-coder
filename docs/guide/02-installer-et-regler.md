@@ -1,4 +1,4 @@
-# 2. Installer et régler Claude
+# 2. Installer et régler Claude {#chapitre-02}
 
 ::: info En une phrase
 Le bon modèle, le bon niveau de réflexion et des permissions raisonnables : trois réglages qui changent beaucoup la qualité du résultat.
@@ -27,10 +27,10 @@ Claude existe en plusieurs « tailles ». Les plus gros réfléchissent mieux ma
 | **Sonnet** | Construire au quotidien une fonctionnalité bien décrite | Le chef d'équipe |
 | **Haiku** | Petites tâches simples et rapides | L'apprenti |
 
-Pour changer de modèle : tape `/model`, et choisis dans la liste.
+Pour changer de modèle : utilise le sélecteur de modèle, au bout de la zone de saisie, ou la commande `/model`.
 
 ::: tip Le combo malin
-Le réglage `opusplan` utilise Opus pour faire le plan et Sonnet pour l'exécuter. C'est un bon équilibre entre qualité et coût. Tape `/model opusplan`.
+Le réglage `opusplan` utilise Opus pour faire le plan et Sonnet pour l'exécuter. C'est un bon équilibre entre qualité et coût. Il se choisit avec la commande `/model opusplan`.
 :::
 
 ## Choisir le niveau d'effort
@@ -42,7 +42,7 @@ En plus du modèle, tu choisis **combien Claude réfléchit** avant d'agir. C'es
 - `xhigh` ou `max` : pour les problèmes vraiment difficiles. Plus lent, plus cher, et parfois Claude réfléchit trop.
 - `low` : pour les questions simples et les petites retouches.
 
-Pour changer : tape `/effort` (ou `/effort high` directement).
+Pour changer : le niveau d'effort se règle dans le sélecteur de modèle, ou avec la commande `/effort` (par exemple `/effort high`).
 
 ::: warning Plus n'est pas toujours mieux
 Mettre `max` partout ne rend pas Claude meilleur : il devient lent, coûteux, et il complique parfois des choses simples. Monte le niveau quand la tâche le mérite, pas par défaut.
@@ -50,7 +50,7 @@ Mettre `max` partout ne rend pas Claude meilleur : il devient lent, coûteux, et
 
 ## Régler les permissions
 
-Claude te demande l'autorisation avant certaines actions : modifier un fichier, lancer une commande. Tu as plusieurs modes, que tu fais défiler avec `Shift+Tab` :
+Claude te demande l'autorisation avant certaines actions : modifier un fichier, lancer une commande. Tu as plusieurs modes, que tu choisis avec le sélecteur de mode à côté du bouton d'envoi (ou en les faisant défiler avec `Shift+Tab`) :
 
 - **Mode manuel** : Claude demande avant presque tout. Sûr, mais fatigant. Au bout de la dixième validation, on clique sans lire, ce qui revient à ne rien contrôler.
 - **Mode auto** : un second modèle surveille les actions de Claude et ne bloque que celles qui semblent risquées. C'est un bon réglage par défaut pour travailler.

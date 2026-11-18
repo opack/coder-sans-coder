@@ -1,4 +1,4 @@
-# 16. Quand ça coince
+# 16. Quand ça coince {#chapitre-16}
 
 ::: info En une phrase
 Tout projet finit par bloquer à un moment. Avant de forcer ou de tout jeter, on cherche pourquoi, parce que le remède dépend de la cause.
@@ -8,8 +8,8 @@ Tout projet finit par bloquer à un moment. Avant de forcer ou de tout jeter, on
 
 | Symptôme | Cause probable | Remède |
 | --- | --- | --- |
-| Claude oublie des consignes, mélange les sujets | Conversation trop longue | `/clear` et une conversation par sujet ([chapitre 9](/guide/09-conversations)) |
-| Claude tourne en rond sur un bug | Contexte pollué par les mauvaises pistes | `/clear`, puis un rapport de bug précis ([chapitre 10](/guide/10-formuler)) |
+| Claude oublie des consignes, mélange les sujets | Conversation trop longue | Nouvelle session et une conversation par sujet ([chapitre 9](/guide/09-conversations)) |
+| Claude tourne en rond sur un bug | Contexte pollué par les mauvaises pistes | Nouvelle session, puis un rapport de bug précis ([chapitre 10](/guide/10-formuler)) |
 | Chaque correction casse autre chose | Pas assez de tests, code trop emmêlé | Des tests sur l'existant d'abord, puis réorganiser ([chapitres 11](/guide/11-tests) et [5](/guide/05-stack-et-architecture)) |
 | Claude invente des règles fausses | Règles métier non écrites | Les écrire dans le cahier des charges ([chapitre 4](/guide/04-cahier-des-charges)) |
 | Claude refait toujours la même erreur | Règle absente ou noyée dans le CLAUDE.md | Ajouter ou mettre en valeur la règle, voire un hook ([chapitres 6](/guide/06-claude-md) et [14](/guide/14-skills-et-hooks)) |
@@ -20,11 +20,11 @@ Tout projet finit par bloquer à un moment. Avant de forcer ou de tout jeter, on
 
 Si Claude n'a pas réussi après **deux tentatives** sur le même problème :
 
-1. Arrête-le (`Échap`).
-2. Si ses tentatives ont abîmé le code, reviens en arrière (`Échap Échap` / `/rewind`, ou Git).
-3. `/clear`.
+1. Arrête-le (bouton d'arrêt, ou `Échap`).
+2. Si ses tentatives ont abîmé le code, reviens en arrière (`Échap` deux fois ou `/rewind`, ou Git).
+3. Ouvre une nouvelle session (ou `/clear`).
 4. Repars avec une demande plus précise, qui inclut ce que tu as appris : « J'ai déjà essayé X et Y, ça n'a pas marché parce que… ».
-5. Monte le niveau de réflexion (`/effort high`) ou passe sur Opus.
+5. Monte le niveau de réflexion à `high` ou passe sur Opus (sélecteur de modèle, ou `/effort high`).
 
 ## Faire faire un état des lieux
 

@@ -1,4 +1,4 @@
-# Glossaire
+# Glossaire {#glossaire}
 
 **Architecture** : la façon dont le code est organisé et découpé en morceaux. Comme le plan des pièces d'une maison. → [Chapitre 5](/guide/05-stack-et-architecture)
 

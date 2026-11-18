@@ -1,4 +1,4 @@
-# 9. Une conversation, un sujet
+# 9. Une conversation, un sujet {#chapitre-09}
 
 ::: info En une phrase
 Plus une conversation est longue, plus Claude se perd. On travaille donc en conversations courtes, une par sujet, et la mémoire du projet vit dans des fichiers.
@@ -21,7 +21,7 @@ C'est probablement la cause numéro un des projets qui « bloquent » au bout de
 
 ### Une conversation par sujet
 
-Une fonctionnalité, un bug, une question : une conversation. Quand c'est terminé, tape `/clear` pour repartir à zéro.
+Une fonctionnalité, un bug, une question : une conversation. Quand c'est terminé, ouvre une nouvelle session (ou tape `/clear`) pour repartir à zéro.
 
 ::: warning La conversation fourre-tout
 Tu commences sur la facturation, tu poses une question sur le design, tu reviens à la facturation, puis tu corriges un bug sur les clients… Le contexte est rempli d'informations sans rapport, et Claude devient brouillon. C'est le piège le plus courant.
@@ -29,7 +29,7 @@ Tu commences sur la facturation, tu poses une question sur le design, tu reviens
 
 ### Repartir à zéro après deux échecs
 
-Si tu as corrigé Claude deux fois sur le même problème et que ça ne marche toujours pas, la conversation est polluée par les mauvaises pistes. **N'insiste pas.** Tape `/clear` et repars avec une demande mieux formulée, qui intègre ce que tu as appris. Une conversation propre avec une bonne demande bat presque toujours une longue conversation pleine de corrections.
+Si tu as corrigé Claude deux fois sur le même problème et que ça ne marche toujours pas, la conversation est polluée par les mauvaises pistes. **N'insiste pas.** Ouvre une nouvelle session (ou `/clear`) et repars avec une demande mieux formulée, qui intègre ce que tu as appris. Une conversation propre avec une bonne demande bat presque toujours une longue conversation pleine de corrections.
 
 ### Les petites questions à part
 
@@ -68,6 +68,6 @@ Lis docs/AVANCEMENT.md. On attaque l'étape suivante : [laquelle].
 
 ## Reprendre une conversation
 
-Parfois, tu veux reprendre une conversation interrompue (tu as fermé l'ordinateur au milieu d'une tâche). Lance Claude avec `claude --continue` pour reprendre la dernière, ou `claude --resume` pour choisir dans la liste.
+Parfois, tu veux reprendre une conversation interrompue (tu as fermé l'ordinateur au milieu d'une tâche). Retrouve-la dans la liste des sessions de l'application et rouvre-la (en terminal : `claude --continue` pour la dernière, `claude --resume` pour choisir).
 
-Astuce : donne un nom à tes conversations avec `/rename` (par exemple `facturation-avoirs`), pour les retrouver facilement.
+Astuce : donne un nom parlant à tes sessions (renomme-les dans la liste, ou avec la commande `/rename`) (par exemple `facturation-avoirs`), pour les retrouver facilement.

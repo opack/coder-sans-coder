@@ -1,4 +1,4 @@
-# 10. Bien formuler ses demandes
+# 10. Bien formuler ses demandes {#chapitre-10}
 
 ::: info En une phrase
 Plus ta demande est précise sur le besoin, moins tu auras de corrections. Décris le résultat attendu, pas la technique.

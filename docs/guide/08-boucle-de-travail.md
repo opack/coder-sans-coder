@@ -1,4 +1,4 @@
-# 8. La boucle de travail
+# 8. La boucle de travail {#chapitre-08}
 
 ::: info En une phrase
 Chaque fonctionnalité suit le même cycle : décrire, planifier, construire, vérifier, sauvegarder, repartir. Toujours par petites étapes.
@@ -12,7 +12,7 @@ Chaque fonctionnalité suit le même cycle : décrire, planifier, construire, v�
 ③ Construire   Claude code et écrit les tests
 ④ Vérifier     tests, essai moi-même, relecture
 ⑤ Sauvegarder  commit Git : « cette version marche »
-⑥ Repartir     /clear, et étape suivante
+⑥ Repartir     nouvelle session, étape suivante
 ```
 
 ## ① Décrire
@@ -21,7 +21,7 @@ Tu expliques ce que tu veux, **du point de vue de l'utilisateur**, en t'appuyant
 
 ## ② Planifier : le mode plan
 
-Appuie sur `Shift+Tab` jusqu'à voir **plan mode** en bas de l'écran. Dans ce mode, Claude peut lire et réfléchir, mais **il ne modifie rien**.
+Choisis **Plan** dans le sélecteur de mode, à côté du bouton d'envoi (ou appuie sur `Shift+Tab` jusqu'à voir le mode plan affiché). Dans ce mode, Claude peut lire et réfléchir, mais **il ne modifie rien**.
 
 Demande-lui un plan. Il te répond avec ce qu'il compte faire : quels fichiers, dans quel ordre, quels tests. Ensuite :
 
@@ -36,7 +36,7 @@ Pour une petite retouche évidente (corriger un texte, changer une couleur), pas
 
 ## ③ Construire
 
-Claude code. Pendant ce temps, jette un œil à ce qu'il fait. S'il part dans une mauvaise direction, appuie sur `Échap` pour l'arrêter, et redirige-le. Mieux vaut corriger tôt que tard.
+Claude code. Pendant ce temps, jette un œil à ce qu'il fait. S'il part dans une mauvaise direction, arrête-le avec le bouton d'arrêt (ou la touche `Échap`), et redirige-le. Mieux vaut corriger tôt que tard.
 
 Exige toujours que **les tests soient écrits en même temps que le code**, et lancés à la fin ([chapitre 11](/guide/11-tests)).
 
@@ -56,7 +56,7 @@ Profites-en pour mettre à jour l'avancement : « Mets à jour docs/AVANCEMENT.m
 
 ## ⑥ Repartir
 
-`/clear`, et on attaque la fonctionnalité suivante dans une conversation neuve ([chapitre 9](/guide/09-conversations)).
+Nouvelle session (ou `/clear`), et on attaque la fonctionnalité suivante dans une conversation neuve ([chapitre 9](/guide/09-conversations)).
 
 ## La taille des étapes
 
